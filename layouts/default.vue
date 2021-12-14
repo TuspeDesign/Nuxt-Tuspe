@@ -27,7 +27,6 @@
 			},
 		},
 		async fetch() {
-			const temp = await postData("info").then((result) => result);
 			if (temp) this.$store.commit("site", temp);
 		},
 	};

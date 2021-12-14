@@ -12,12 +12,10 @@
 		"
 	>
 		<nuxt-link
-			v-if="site && site.imageLogo"
 			id="logo"
 			class="block sm:inline-block w-36"
 			to="/"
 			rel="home"
-			:title="site.name"
 		>
 			<img src="https://tuspe.com/images/tuspe-logo.png"/>
 		</nuxt-link>
