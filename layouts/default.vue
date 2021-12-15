@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="bg-gray-50">
 		<a class="hidden" href="#content">Sisältö</a>
 
 		<Header/>
@@ -24,10 +24,8 @@
 		},
 		computed: {
 			site: function () {
+				return this.$store.getters["site"];
 			},
-		},
-		async fetch() {
-			if (temp) this.$store.commit("site", temp);
 		},
 	};
 </script>

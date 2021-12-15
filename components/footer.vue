@@ -1,19 +1,11 @@
 <template>
-	<footer v-if="site" class="bg-gray-900 text-white py-2 px-6 mt-12">
-		<div class="grid grid-cols-2 container mx-auto">
+	<footer v-if="site" class="py-2 px-6 mt-20">
+		<div class="grid grid-cols-1 bg-gray-50 container mx-auto">
 			
-			<div class="text-left m-auto">
-				<ul>
-					<nuxt-link to="/info" class="no-underline hover:underline text-gray-400 hover:text-white">
-					Tietosuojaseloste</nuxt-link>
-				</ul>
-			</div>
-
-			<div class="text-right m-auto">
-				<ul>
-					<a href="https://www.dataline.fi/" class="no-underline hover:underline text-gray-400 hover:text-white inline-block">Dataline Group Oy</a>
-					<a href="https://www.tuspe.com/" class="no-underline hover:underline text-gray-400 hover:text-white inline-block ml-4">Tuspe Design</a>
-				</ul>
+			<div class="m-auto">
+				<div id="contactInfo">
+					<h3 class="">Tuspe Design Oy</h3><p><a href="mailto:info@tuspe.com" rel="nofollow">info@tuspe.com</a><br><a href="tel:+358407746121" rel="nofollow">040 774 6121</a></p>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -24,6 +16,7 @@
 		name: "Footer",
 		computed: {
 			site: function () {
+				return this.$store.getters["site"];
 			},
 		},
 	};

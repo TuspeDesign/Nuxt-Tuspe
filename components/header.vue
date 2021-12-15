@@ -7,8 +7,9 @@
 			z-50
 			grid
 			w-full
-			py-4
-			px-6
+			py-5
+			px-5
+			bg-gray-50
 		"
 	>
 		<nuxt-link
