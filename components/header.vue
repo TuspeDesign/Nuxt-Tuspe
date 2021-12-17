@@ -3,17 +3,18 @@
 		class="
 			top-0
 			left-0
-			grid
 			bg-gray-900
 			flex-auto
 			text-white
+			grid
+			w-full
 			py-5
 			px-5
 		"
 	>
 		<nuxt-link
 			id="logo"
-			class="block sm:inline-block w-36"
+			class="block sm:inline-block w-32"
 			to="/"
 			rel="home"
 		>
@@ -26,6 +27,7 @@
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
+				
 			>
 				<title>Avaa / sulje mobiilivalikko</title>
 				<path
@@ -35,7 +37,7 @@
 		</button>
 
 		<nav
-			class="bg-gray-900 z-20 relative box-border lg:text-right lg:grid float:right"
+			class="bg-gray-900 z-20 relative box-border lg:text-right lg:grid"
 			:class="{ active: active, hidden: !active }"
 		>
 			<ul class="self-center m-0 p-0">
@@ -186,8 +188,10 @@
 		},
 		data() {
 			return {
+				active: null,
 				hover: false,
 				scrollPosition: 0,
+				home: null,
 			};
 		},
 		methods: {

@@ -5,7 +5,9 @@
 
             <p class="mt-1">Olemme toteuttaneet monipuolisesti erilaisia kotisivuja ja verkkokauppoja kaikenlaisille ja eri kokoisille toimijoille toiminimistä kansainvälisiin yrityksiin.<br> Teemme suurimman osan töistämme alihankintana.</p>
 
-            <button class="mt-5 bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full" @click="goToYhteys()"> Tilaa ilmainen kartoitus! </button>
+            <div class="mt-5 px-50">
+                <button class="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full" @click="goToYhteys()"> Tilaa ilmainen kartoitus! </button>
+            </div>
         </div>
 
         <div class="grid grid-cols-4 gap-7 m-auto mx-20 mt-20">

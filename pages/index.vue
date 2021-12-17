@@ -1,6 +1,6 @@
 <template>
 	<div class="container mx-auto py-10 font-serif">
-		<div class="text-center mt-10">
+		<div class="text-center mt-1">
 			<h1 class="text-4xl text-blue-900 font-bold">Miksi tyytyä hyvään,<br>kun voi saada <a class="text-blue-500 hover:underline font-bold" href="/kotisivut-yritykselle">parasta</a>?</h1>
 		</div>
 	
@@ -20,7 +20,7 @@
 
 		<div id="contactMe" class="text-center mt-20">
 			<h2 class="text-3xl text-blue-900 font-bold"><span class="text-blue-500 font-bold">Laadukkaat verkkosivut</span><br>ovat hyvää asiakaspalvelua</h2>
-			<p class="text-base mt-5 ">Kehitä liiketoimintaasi tilaamalla uudet kotisivut yrityksellesi tai uudista nykyiset sivusi.<br> Ota yhteyttä, saat ilmaisen kartoituksen verkkosivustosta ja ehdotuksen, miten voisimme parantaa myyntiänne.</p>
+			<p class="text-base mt-5 ">Kehitä liiketoimintaasi tilaamalla uudet kotisivut yrityksellesi tai uudista nykyiset sivusi.<br> Ota yhteyttä, saat ilmaisen kartoituksen verkkosivustosta ja ehdotuksen,<br> miten voisimme parantaa myyntiänne.</p>
 
 			<button class="mt-10 bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full" @click="goToYhteys()"> Ilmainen kartoitus! </button>
 		</div>

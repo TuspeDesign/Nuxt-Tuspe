@@ -24,6 +24,8 @@
 
                         <p><button class="mt-10 bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full" @click="null"> Lähetä </button></p>
 
+                        <p class="mt-2"><a class="text-blue-500 hover:underline" href="/tietosuoja">Rekisteri- ja tietosuojaseloste</a></p>
+
                         <h2 class="text-3xl text-blue-900 mt-20 text-center">Huippujoukko kumppaneina</h2>
 		            </form>
 	            </div>
