@@ -11,6 +11,7 @@
 			<img src="https://tuspe.com/images/tuspe-logo.png"/>
 		</nuxt-link>
 		
+		<!-- <Sidebar/> -->
 		<main
 			id="content"
 			class="flex flex-col max-w-screen-xl mx-auto -mt-5"
@@ -24,11 +25,13 @@
 <script>
 	import Header from "@/components/header";
 	import Footer from "@/components/footer";
+	import Sidebar from "@/components/sidebar";
 
 	export default {
 		components: {
 			Header,
 			Footer,
+			Sidebar,
 		},
 		computed: {
 			site: function () {

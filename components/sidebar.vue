@@ -1,19 +1,42 @@
 <template>
-    <aside>
-		<h3>Osastot</h3>
-		<ul class="m-0 p-0">
-			<li
-				v-for="e in site.menu"
-				:key="e.id"
-				@click="openMenu"
-				class="block sm:inline-block"
-			>
-				<nuxt-link :to="e.slug" class="block p-2">
-					{{ e.name }}
-				</nuxt-link>
-			</li>
-		</ul>
-	</aside>
+    <button @click="toggle">Valikko
+		<nav>
+			<div class="">
+				<ul>
+					<li class="relative block sm:inline-block">
+					<nuxt-link
+						to="/"
+						class="
+							block
+							no-underline
+							hover:underline
+							uppercase
+							p-2
+						"
+						rel="home"
+					>
+						Etusivu
+					</nuxt-link>
+					</li>
+
+					<li class="relative block sm:inline-block">
+					<nuxt-link
+						to="/kotisivut-yritykselle"
+						class="
+							block
+							no-underline
+							hover:underline
+							uppercase
+							p-2
+						"
+					>
+						Kotisivut
+					</nuxt-link>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</button>
 </template>
 
 <script>
@@ -23,6 +46,9 @@
 			site: function () {
 				return this.$store.getters["site"];
 			},
+		},
+		methods: {
+			
 		},
 	};
 </script>

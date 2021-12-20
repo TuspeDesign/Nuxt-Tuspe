@@ -1,24 +1,45 @@
 <template>
-	<div class="container mx-auto py-10 font-serif">
-		<div class="text-center mt-1">
+	<div class="container mx-auto font-serif">
+		<div class="text-center">
 			<h1 class="text-4xl text-blue-900 font-bold">Miksi tyytyä hyvään,<br>kun voi saada <a class="text-blue-500 hover:underline font-bold" href="/kotisivut-yritykselle">parasta</a>?</h1>
 		</div>
 	
 		<div class="grid grid-cols-3 gap-7 mt-20">
-			<p><a href="/kotisivut-yritykselle">
-				<img class="rounded-3xl transform hover:scale-110 duration-300" src="https://tuspe.com/images/websites.webp">
+			<p class="transform hover:scale-110 duration-300"><a href="/kotisivut-yritykselle">
+
+				<div class="absolute -top-6 -left-28 p-6 mx-20 text-center bg-white rounded-2xl">
+					<h1 class="text-lg text-blue-900 font-bold">Kotisivut yritykselle<br>sinun toiveillasi</h1>
+
+					<p class="mt-2 text-sm">Ei vain ulkoisesti kaunis ratkaisu vaan toimiva myyntikanava. Sinä unelmoit, me toteutamme.</p>
+				</div>
+
+				<img class="rounded-3xl" src="https://tuspe.com/images/websites.webp">
 			</a></p>
 
-			<p><a href="/verkkokauppa-yritykselle">
-				<img class="rounded-3xl transform hover:scale-110 duration-300" src="https://tuspe.com/images/webstores.webp">
+			<p class="transform hover:scale-110 duration-300"><a href="/verkkokauppa-yritykselle">
+
+				<div class="absolute -top-6 -left-28 p-6 mx-20 text-center bg-white rounded-2xl">
+					<h1 class="text-lg text-blue-900 font-bold">Verkkokauppa<br>yritykselle</h1>
+
+					<p class="mt-2 text-sm">Aloita maailmanvalloitus monipuolisella ja ketterällä verkkokaupalla.</p>
+				</div>
+
+				<img class="rounded-3xl" src="https://tuspe.com/images/webstores.webp">
 			</a></p>
 
-			<p><a href="/yllapito">
-				<img class="rounded-3xl transform hover:scale-110 duration-300" src="https://tuspe.com/images/hosting.webp">
+			<p class="transform hover:scale-110 duration-300 hover:header-blue-500"><a href="/yllapito">
+
+				<div class="absolute -top-6 -left-28 p-6 mx-20 text-center bg-white rounded-2xl">
+					<h1 class="text-lg text-blue-900 font-bold">Luotettava koti<br>verkkosivustolle</h1>
+
+					<p class="mt-2 text-sm">Meillä on turvallista ja hyvä olla. Jos sivustosi saisi valita, asuisivat ne Tuspen hoidossa.</p>
+				</div>
+
+				<img class="rounded-3xl" src="https://tuspe.com/images/hosting.webp">
 			</a></p>
 		</div>
 
-		<div id="contactMe" class="text-center mt-20">
+		<div id="contactMe" class="text-center mt-12">
 			<h2 class="text-3xl text-blue-900 font-bold"><span class="text-blue-500 font-bold">Laadukkaat verkkosivut</span><br>ovat hyvää asiakaspalvelua</h2>
 			<p class="text-base mt-5 ">Kehitä liiketoimintaasi tilaamalla uudet kotisivut yrityksellesi tai uudista nykyiset sivusi.<br> Ota yhteyttä, saat ilmaisen kartoituksen verkkosivustosta ja ehdotuksen,<br> miten voisimme parantaa myyntiänne.</p>
 

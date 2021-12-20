@@ -18,11 +18,11 @@
         <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-center">
             <h2 class="text-3xl text-blue-900 mt-20">Avaimet käteen</h2>
 
-            <p class="mt-1 px-40">Se tunne, kun jäät koukkuun hyvään kirjaan tai sarjaan.. Mitäs jos luotaisiin sama fiilis asiakkaallesi kotisivuistasi?</p>
-		    <p class="mt-1 px-40">Olipa kyseessä kotisivut tai <a class="text-blue-500 hover:underline" href="/verkkokauppa-yritykselle">verkkokauppa yrityksellesi</a>, saat meiltä avaimet käteen-ratkaisun. Lopputulos ei ole pelkkä teknisesti kaunis toteutus vaan viisaasti rakennettu myyntikanava, jonka sisältö ja ulkoasu puhuttelevat asiakkaitasi juuri oikealla tavalla. Luodaan sinun yrityksen näköinen kotisivu.</p>
-		    <p class="mt-1 px-40">Kotisivuilla on suuri merkitys edelleen tämän päivän digimaailmassa. Kotisivu on alusta, jossa kerrot yrityksesi tarinan ja saat asiakkaasi kiinnostumaan tuotteistasi ja palveluistasi. Se on myyntikanava ja yrityksesi kotipaikka verkossa. Somekanavat voivat tukea myyntiä ja näkyvyyttä, mutta omat kotisivut tiivistää kaiken yhteen paikkaan.</p>
-		    <p class="mt-1 px-40">Kun mietit yhteistyökumppania kotisivujesi tekijälle, huomio suunnittelussa, toteutuksessa ja hinnassa, mitä kaikkea todellisuudessa saat:</p>
-		    <ul class="mt-1 text-left px-40">
+            <p class="mt-1">Se tunne, kun jäät koukkuun hyvään kirjaan tai sarjaan.. Mitäs jos luotaisiin sama fiilis asiakkaallesi kotisivuistasi?</p>
+		    <p class="mt-1">Olipa kyseessä kotisivut tai <a class="text-blue-500 hover:underline" href="/verkkokauppa-yritykselle">verkkokauppa yrityksellesi</a>, saat meiltä avaimet käteen-ratkaisun. Lopputulos ei ole pelkkä teknisesti kaunis toteutus vaan viisaasti rakennettu myyntikanava, jonka sisältö ja ulkoasu puhuttelevat asiakkaitasi juuri oikealla tavalla. Luodaan sinun yrityksen näköinen kotisivu.</p>
+		    <p class="mt-1">Kotisivuilla on suuri merkitys edelleen tämän päivän digimaailmassa. Kotisivu on alusta, jossa kerrot yrityksesi tarinan ja saat asiakkaasi kiinnostumaan tuotteistasi ja palveluistasi. Se on myyntikanava ja yrityksesi kotipaikka verkossa. Somekanavat voivat tukea myyntiä ja näkyvyyttä, mutta omat kotisivut tiivistää kaiken yhteen paikkaan.</p>
+		    <p class="mt-1">Kun mietit yhteistyökumppania kotisivujesi tekijälle, huomio suunnittelussa, toteutuksessa ja hinnassa, mitä kaikkea todellisuudessa saat:</p>
+		    <ul class="mt-1 text-left">
 			    <li>- Tarvitsetko vain teknisen ratkaisun, jonne tuotat itse sisällön?</li>
 			    <li>- Mitä analytiikkatyökaluja tarvitaan, jotta asiakkaasi ja sidosryhmäsi löytävät yrityksesi tuotteet ja palvelut?</li>
 			    <li>- Mikä on <a href="/hakukoneoptimointi">avainsanatutkimus</a>? Erittäin tärkeä sisällön suunnittelun lähtökohta, jossa kotisivujesi kertova teksti optimoidaan niin, että asiakkaasi löytävät hakemillaan sanoilla hakukoneiden kautta juuri sinun yrityksesi.</li>
@@ -30,7 +30,7 @@
 			    <li>- Miten ja mistä hankkia <a href="/verkkotunnus">verkkotunnus</a> (domain)? Ei hätää, me hoidamme tarvittaessa kaiken puolestasi, jonka jälkeen verkkotunnuksen hallinta on joko sinun nimipalvelimilla tai meidän lisämaksuttomilla. Me emme veloita ryöstöhintoja verkkotunnuksen vuosimaksuista.</li>
 			    <li>- Millaisia <a href="/yllapito">ylläpitopalveluita</a> tarvitsen?</li>
 		    </ul>
-		    <p class="mt-1 px-40">Et jää yksin näiden kysymysten kanssa vaan me olemme valmiit auttamaan sinut ylitse ongelmien. Laske alustava tarjous kotisivuillesi sen mukaan, miten kattavan kokonaisuuden haluat.</p>
+		    <p class="mt-1">Et jää yksin näiden kysymysten kanssa vaan me olemme valmiit auttamaan sinut ylitse ongelmien. Laske alustava tarjous kotisivuillesi sen mukaan, miten kattavan kokonaisuuden haluat.</p>
         
             <h2 class="text-3xl text-blue-900 mt-10 text-center">Muutama esimerkki ylpeydenaiheistamme</h2>
             <p class="mt-1 text-center">Liitetäänkö sinunkin yrityksesi tähän huippujoukkueeseen?</p>

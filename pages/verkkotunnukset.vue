@@ -18,7 +18,7 @@
         <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-center">
             <h2 class="text-3xl text-blue-900 mt-20">Huolehdimme kaiken valmiiksi</h2>
 
-            <ul class="mt-1 text-left px-40">
+            <ul class="mt-1 text-left">
                 <li>- Verkkotunnuksen rekisteröinti sinun tiedoillasi (<a class="text-blue-500 hover:underline" href="https://www.traficom.fi/fi/viestinta/fi-verkkotunnukset/fi-verkkotunnushaku" title="Tarkista, onko haluamasi fi-verkkotunnus vapaana." target="_blank" hreflang="fi">Traficom</a> / <a class="text-blue-500 hover:underline" href="https://www.namecheap.com/" title="Tarkista, onko haluamasi verkkotunnus vapaana." target="_blank" hreflang="en">Namecheap</a>).</li>
                 <li>- Uusimme vuosittain verkkotunnuksen automaattisesti.</li>
                 <li>- Ilmaiset nimipalvelimet tarvittaessa (<a class="text-blue-500 hover:underline" href="https://www.cloudflare.com/" title="Suojaa palvelusi Cloudflaren avulla" target="_blank" hreflang="en">Cloudflare</a>).</li>
@@ -26,9 +26,9 @@
                 <li>- Verkkotunnuksien rekisteröinnissä mahdollisimman halvat hinnat sekä mahdollisesti muita rahan arvoisia vinkkejä tulevaisuudelle.</li>
             </ul>
 		    
-            <p class="mt-1 px-40">Emme usko määräaikaisiin sopimuksiin vaan verkkotunnus on aina sinun eli voit koska tahansa siirtää verkkotunnuksen meiltä toiselle palveluntarjoajalle tai vaihtaa haluamasi nimipalvelimet siihen.</p>
-		    <p class="mt-1 px-40">Hoidamme tarvittaessa myös yrityksesi sähköpostipalvelut kuntoon. Meiltä onnistuvat omalla verkkotunnuksella ilmaiset Gmail tai Outlook sekä maksulliset <a class="text-blue-500 hover:underline" href="https://gsuite.google.fi/intl/fi/" title="Tuttu ja turvallinen Gmail yritysten tarpeisiin räätälöitynä." hreflang="fi">GSuite</a> tai <a class="text-blue-500 hover:underline" href="https://www.office.com/?omkt=fi-FI" title="Sähköposti ja Office-sovellusten Premium-versiot" hreflang="fi">Office 365</a>. Myös käyttöopastusta.</p>
-		    <p class="mt-1 px-40">Riippumatta siitä kuka huolehtii kotisivujen hyvinvoinnista, suosittelemme käyttämään maksutonta Cloudflare-palvelua (mm. nimipalvelut, kotisivujen suojaus, parempi välimuisti), koska sen avulla on mahdollista nopeuttaa huomattavasti kansainvälistä liikennettä sivustolla sekä suojata yrityksen kotisivut paremmin mahdollisilta palvelunestohyökkäyksiltä. Cloudflarella on palvelimia ympäri maailman, joten jos sivustosi käyttää heidän välimuistia vierailija vierailee todellisuudessa lähimmällä serverillä mikä saattaa vähentää huomattavasti latausaikaa.</p>
+            <p class="mt-1">Emme usko määräaikaisiin sopimuksiin vaan verkkotunnus on aina sinun eli voit koska tahansa siirtää verkkotunnuksen meiltä toiselle palveluntarjoajalle tai vaihtaa haluamasi nimipalvelimet siihen.</p>
+		    <p class="mt-1">Hoidamme tarvittaessa myös yrityksesi sähköpostipalvelut kuntoon. Meiltä onnistuvat omalla verkkotunnuksella ilmaiset Gmail tai Outlook sekä maksulliset <a class="text-blue-500 hover:underline" href="https://gsuite.google.fi/intl/fi/" title="Tuttu ja turvallinen Gmail yritysten tarpeisiin räätälöitynä." hreflang="fi">GSuite</a> tai <a class="text-blue-500 hover:underline" href="https://www.office.com/?omkt=fi-FI" title="Sähköposti ja Office-sovellusten Premium-versiot" hreflang="fi">Office 365</a>. Myös käyttöopastusta.</p>
+		    <p class="mt-1">Riippumatta siitä kuka huolehtii kotisivujen hyvinvoinnista, suosittelemme käyttämään maksutonta Cloudflare-palvelua (mm. nimipalvelut, kotisivujen suojaus, parempi välimuisti), koska sen avulla on mahdollista nopeuttaa huomattavasti kansainvälistä liikennettä sivustolla sekä suojata yrityksen kotisivut paremmin mahdollisilta palvelunestohyökkäyksiltä. Cloudflarella on palvelimia ympäri maailman, joten jos sivustosi käyttää heidän välimuistia vierailija vierailee todellisuudessa lähimmällä serverillä mikä saattaa vähentää huomattavasti latausaikaa.</p>
         </div>
     </div>
 </template>

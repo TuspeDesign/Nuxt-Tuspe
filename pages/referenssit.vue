@@ -1,9 +1,9 @@
 <template>
     <div class="container mx-auto py-10 font-serif">
-        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-80 text-center">
+        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-24 text-center">
             <h1 class="text-4xl text-blue-900">Esimerkkejä töistämme</h1>
 
-            <p class="mt-1">Olemme toteuttaneet monipuolisesti erilaisia kotisivuja ja verkkokauppoja kaikenlaisille ja eri kokoisille toimijoille toiminimistä kansainvälisiin yrityksiin.<br> Teemme suurimman osan töistämme alihankintana.</p>
+            <p class="mt-1 text-center">Olemme toteuttaneet monipuolisesti erilaisia kotisivuja ja verkkokauppoja kaikenlaisille ja<br>eri kokoisille toimijoille toiminimistä kansainvälisiin yrityksiin.<br> Teemme suurimman osan töistämme alihankintana.</p>
 
             <div class="mt-5 px-50">
                 <button class="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full" @click="goToYhteys()"> Tilaa ilmainen kartoitus! </button>
