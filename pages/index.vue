@@ -1,13 +1,13 @@
 <template>
 	<div class="container mx-auto font-serif">
 		<div class="text-center">
-			<h1 class="text-4xl text-blue-900 font-bold">Miksi tyytyä hyvään,<br>kun voi saada <a class="text-blue-500 hover:underline font-bold" href="/kotisivut-yritykselle">parasta</a>?</h1>
+			<h1 class="text-4xl text-blue-900 font-bold mt-5">Miksi tyytyä hyvään,<br>kun voi saada <a class="text-blue-500 hover:underline font-bold" href="/kotisivut-yritykselle">parasta</a>?</h1>
 		</div>
 	
-		<div class="grid grid-cols-3 gap-7 mt-20">
+		<div class="grid grid-cols-3 gap-10 mt-20">
 			<p class="transform hover:scale-110 duration-300"><a href="/kotisivut-yritykselle">
 
-				<div class="absolute -top-6 -left-28 p-6 mx-20 text-center bg-white rounded-2xl">
+				<div class="absolute -top-6 -left-24 p-6 mx-20 text-center bg-white rounded-2xl shadow-2xl">
 					<h1 class="text-lg text-blue-900 font-bold">Kotisivut yritykselle<br>sinun toiveillasi</h1>
 
 					<p class="mt-2 text-sm">Ei vain ulkoisesti kaunis ratkaisu vaan toimiva myyntikanava. Sinä unelmoit, me toteutamme.</p>
@@ -18,7 +18,7 @@
 
 			<p class="transform hover:scale-110 duration-300"><a href="/verkkokauppa-yritykselle">
 
-				<div class="absolute -top-6 -left-28 p-6 mx-20 text-center bg-white rounded-2xl">
+				<div class="absolute -top-6 -left-24 p-6 mx-20 text-center bg-white rounded-2xl shadow-2xl">
 					<h1 class="text-lg text-blue-900 font-bold">Verkkokauppa<br>yritykselle</h1>
 
 					<p class="mt-2 text-sm">Aloita maailmanvalloitus monipuolisella ja ketterällä verkkokaupalla.</p>
@@ -29,7 +29,7 @@
 
 			<p class="transform hover:scale-110 duration-300 hover:header-blue-500"><a href="/yllapito">
 
-				<div class="absolute -top-6 -left-28 p-6 mx-20 text-center bg-white rounded-2xl">
+				<div class="absolute -top-6 -left-24 p-6 mx-20 text-center bg-white rounded-2xl shadow-2xl">
 					<h1 class="text-lg text-blue-900 font-bold">Luotettava koti<br>verkkosivustolle</h1>
 
 					<p class="mt-2 text-sm">Meillä on turvallista ja hyvä olla. Jos sivustosi saisi valita, asuisivat ne Tuspen hoidossa.</p>
