@@ -14,8 +14,8 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-center">
-            <h2 class="text-3xl text-blue-900 mt-20">Mitä hakukoneoptimointi tarkoittaa ja mikä on avainsanatutkimus?</h2>
+        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-left">
+            <h2 class="text-3xl text-blue-900 mt-20 text-center">Mitä hakukoneoptimointi tarkoittaa ja mikä on avainsanatutkimus?</h2>
 
             <p class="mt-1">Hakukoneoptimointi (SEO) on sivuston näkyvyyden parantamista hakukonetuloksissa orgaanisen, eli maksuttoman, liikenteen osalta. Hakukoneoptimointi on kustannustehokasta, sillä hyvin optimoitu sivusto löytyy hakukoneista oikeilla hakusanoilla riittävän korkealta orgaanisesti ja se saa myös maksetussa hakukonemainonnassa paremmat laatupisteet.</p>
 		    <p class="mt-1">Hakukoneoptimointiin kiinteästi liittyvä avainsanatutkimus kannattaa tehdä jo kotisivujen ja verkkokaupan suunnitteluvaiheessa. Avainsanatutkimuksella selvitetään, miten paljon hakuja tehdään tietyillä sanoilla yrityksesi toimialalla ja tuotteisiin tai palveluihin liittyen. Kun volyymiltaan suurimmat avainsanat on selvitetty, upotetaan ne kotisivujesi tai verkkokauppasi sisältöteksteihin. Näin mahdollistetaan kotisivujesi sekä sen alasivujen löytyminen potentiaalisille asiakkaillesi.</p>

@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-center">
+        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-left">
             <h2 class="text-3xl text-blue-900 mt-20 text-center">Kauppa, josta asiakkaasi lähtee ostoskassi mukanaan</h2>
 
             <p class="mt-1">Verkkokaupassa teknisen toteutuksen lisäksi on hyvä huomioida visuaalisuus sekä tuotteiden kertova ja informatiivinen teksti. Tuotekuvilla ja videoilla on myös suuri merkitys, sillä asiakas ostaa tuotteen varmemmin, mitä enemmän ostopäätöstä vahvistavaa tietoa siitä on tarjolla. Tekstin pitäisi olla myös mahdollisimman uniikkia sisältäen sopivasti avainsanoja. Kyllä, mahdollisimman hyviä hakusanoja pitäisi olla otsikoissa, osoitteissa ja tuotetekstissä.</p>

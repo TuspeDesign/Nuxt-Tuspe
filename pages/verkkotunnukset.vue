@@ -15,8 +15,8 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-center">
-            <h2 class="text-3xl text-blue-900 mt-20">Huolehdimme kaiken valmiiksi</h2>
+        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-left">
+            <h2 class="text-3xl text-blue-900 mt-20 text-center">Huolehdimme kaiken valmiiksi</h2>
 
             <ul class="mt-1 text-left">
                 <li>- Verkkotunnuksen rekisteröinti sinun tiedoillasi (<a class="text-blue-500 hover:underline" href="https://www.traficom.fi/fi/viestinta/fi-verkkotunnukset/fi-verkkotunnushaku" title="Tarkista, onko haluamasi fi-verkkotunnus vapaana." target="_blank" hreflang="fi">Traficom</a> / <a class="text-blue-500 hover:underline" href="https://www.namecheap.com/" title="Tarkista, onko haluamasi verkkotunnus vapaana." target="_blank" hreflang="en">Namecheap</a>).</li>

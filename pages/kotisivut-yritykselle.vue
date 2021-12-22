@@ -15,8 +15,8 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-center">
-            <h2 class="text-3xl text-blue-900 mt-20">Avaimet käteen</h2>
+        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-left">
+            <h2 class="text-3xl text-blue-900 mt-20 text-center">Avaimet käteen</h2>
 
             <p class="mt-1">Se tunne, kun jäät koukkuun hyvään kirjaan tai sarjaan.. Mitäs jos luotaisiin sama fiilis asiakkaallesi kotisivuistasi?</p>
 		    <p class="mt-1">Olipa kyseessä kotisivut tai <a class="text-blue-500 hover:underline" href="/verkkokauppa-yritykselle">verkkokauppa yrityksellesi</a>, saat meiltä avaimet käteen-ratkaisun. Lopputulos ei ole pelkkä teknisesti kaunis toteutus vaan viisaasti rakennettu myyntikanava, jonka sisältö ja ulkoasu puhuttelevat asiakkaitasi juuri oikealla tavalla. Luodaan sinun yrityksen näköinen kotisivu.</p>

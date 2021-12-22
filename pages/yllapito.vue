@@ -15,7 +15,7 @@
             </div>    
         </div>
 
-        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-center">
+        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-left">
             <h2 class="text-3xl text-blue-900 mt-20 text-center">Kaikki tarvittavat palvelut</h2>
             <p class="mt-1">Tämän kaiken saat 15€:n kuukausimaksulla (18.60€ sis. ALV). Turvallisuus ja toimivuus ovat arvokkaita asioista, mutta niiden toteutumisen ei tarvitse olla kallista kukkarollesi. Hintamme ovat pysyvästi edulliset.</p>
             <ul class="mt-1 text-left">

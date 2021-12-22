@@ -7,7 +7,7 @@
 		<div class="grid grid-cols-3 gap-10 mt-20">
 			<p class="transform hover:scale-110 duration-300"><a href="/kotisivut-yritykselle">
 
-				<div class="absolute -top-6 -left-24 p-6 mx-20 text-center bg-white rounded-2xl shadow-2xl">
+				<div class="absolute -top-6 -left-14 p-6 mx-10 text-center bg-white rounded-2xl shadow-2xl">
 					<h1 class="text-lg text-blue-900 font-bold">Kotisivut yritykselle<br>sinun toiveillasi</h1>
 
 					<p class="mt-2 text-sm">Ei vain ulkoisesti kaunis ratkaisu vaan toimiva myyntikanava. Sinä unelmoit, me toteutamme.</p>
@@ -18,7 +18,7 @@
 
 			<p class="transform hover:scale-110 duration-300"><a href="/verkkokauppa-yritykselle">
 
-				<div class="absolute -top-6 -left-24 p-6 mx-20 text-center bg-white rounded-2xl shadow-2xl">
+				<div class="absolute -top-6 -left-14 p-6 mx-10 text-center bg-white rounded-2xl shadow-2xl">
 					<h1 class="text-lg text-blue-900 font-bold">Verkkokauppa<br>yritykselle</h1>
 
 					<p class="mt-2 text-sm">Aloita maailmanvalloitus monipuolisella ja ketterällä verkkokaupalla.</p>
@@ -29,7 +29,7 @@
 
 			<p class="transform hover:scale-110 duration-300 hover:header-blue-500"><a href="/yllapito">
 
-				<div class="absolute -top-6 -left-24 p-6 mx-20 text-center bg-white rounded-2xl shadow-2xl">
+				<div class="absolute -top-6 -left-14 p-6 mx-10 text-center bg-white rounded-2xl shadow-2xl">
 					<h1 class="text-lg text-blue-900 font-bold">Luotettava koti<br>verkkosivustolle</h1>
 
 					<p class="mt-2 text-sm">Meillä on turvallista ja hyvä olla. Jos sivustosi saisi valita, asuisivat ne Tuspen hoidossa.</p>

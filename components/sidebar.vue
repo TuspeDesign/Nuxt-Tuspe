@@ -12,7 +12,22 @@
 			/>
 		</svg>
 		</button>
-		<nav class="fixed top-24 right-0 z-40 w-40 text-center bg-blue-900 text-white py-6">
+		<nav 
+			class="
+				fixed
+				top-24 
+				right-0 
+				z-40 
+				w-40 
+				text-center 
+				bg-blue-900 
+				text-white 
+				py-6
+				inset-y-0
+				shadow-2xl
+				hidden
+			"
+		>
 			<div>
 				<ul>
 					<li class="relative block sm:inline-block">
@@ -23,7 +38,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 						rel="home"
 					>
@@ -39,7 +54,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 					>
 						Kotisivut
@@ -54,7 +69,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 					>
 						Verkkokaupat
@@ -69,7 +84,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 					>
 						Ylläpito
@@ -84,7 +99,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 					>
 						Urheilusaitti
@@ -99,7 +114,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 					>
 						Hakukoneoptimointi
@@ -114,7 +129,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 					>
 						Verkkotunnus
@@ -129,7 +144,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 					>
 						Referenssit
@@ -144,7 +159,7 @@
 							no-underline
 							hover:underline
 							uppercase
-							p-2
+							p-4
 						"
 					>
 						Ota yhteyttä
