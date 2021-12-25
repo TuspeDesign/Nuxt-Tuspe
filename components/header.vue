@@ -1,33 +1,29 @@
 <template>
-	<header
-		class="
-			top-0
-			left-0
-			bg-gray-900
-			flex-auto
-			text-white
-			grid
-			w-full
-			py-5
-			px-5
-		"
-	>
+	<header>
 		<nuxt-link
 			id="logo"
-			class="block sm:inline-block w-32"
+			class="absolute top-6 left-6 z-40 block sm:inline-block w-32"
 			to="/"
 			rel="home"
+			title="Tuspe Design Oy - Laadukkaat kotisivut ja verkkokaupat yritykselle"
 		>
-			<img src="https://tuspe.com/images/tuspe-logo.png"/>
+			<picture>
+				<source srcset="/images/tuspe-logo.webp" type="image/webp" />
+				<source srcset="/images/tuspe-logo.png" type="image/png" />
+				<img src="/images/tuspe-logo.png" alt="Tuspe Design Oy" />
+			</picture>
 		</nuxt-link>
 
-		<button @click="openMenu" id="menuToggler" class="sm:hidden">
+		<button
+			@click="openMenu"
+			id="menuToggler"
+			class="fixed top-6 right-6 z-50"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"
-				
 			>
 				<title>Avaa / sulje mobiilivalikko</title>
 				<path
@@ -37,143 +33,30 @@
 		</button>
 
 		<nav
-			class="bg-gray-900 z-20 relative box-border lg:text-right lg:grid"
+			class="
+				fixed
+				top-0
+				right-0
+				w-92
+				bg-gray-900
+				z-40
+				h-screen
+				text-center
+			"
 			:class="{ active: active, hidden: !active }"
 		>
 			<ul class="self-center m-0 p-0">
-				<li @click="openMenu" class="block sm:inline-block">
+				<li
+					v-for="(e, i) in menu"
+					:key="i"
+					@click="openMenu"
+					class="block"
+				>
 					<nuxt-link
-						to="/"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-						rel="home"
+						:to="`/${e.path}`"
+						class="block text-white no-underline uppercase p-2"
 					>
-						Etusivu
-					</nuxt-link>
-				</li>
-
-				<li class="relative block sm:inline-block">
-					<nuxt-link
-						to="/kotisivut-yritykselle"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-					>
-						Kotisivut
-					</nuxt-link>
-				</li>
-
-				<li class="relative block sm:inline-block">
-					<nuxt-link
-						to="/verkkokauppa-yritykselle"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-					>
-						Verkkokaupat
-					</nuxt-link>
-				</li>
-
-				<li class="relative block sm:inline-block">
-					<nuxt-link
-						to="/yllapito"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-					>
-						Ylläpito
-					</nuxt-link>
-				</li>
-
-				<li class="relative block sm:inline-block">
-					<nuxt-link
-						to="/urheilusaitti"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-					>
-						Urheilusaitti
-					</nuxt-link>
-				</li>
-
-				<li class="relative block sm:inline-block">
-					<nuxt-link
-						to="/hakukoneoptimointi"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-					>
-						Hakukoneoptimointi
-					</nuxt-link>
-				</li>
-
-				<li class="relative block sm:inline-block">
-					<nuxt-link
-						to="/verkkotunnukset"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-					>
-						Verkkotunnus
-					</nuxt-link>
-				</li>
-
-				<li class="relative block sm:inline-block">
-					<nuxt-link
-						to="/referenssit"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-					>
-						Referenssit
-					</nuxt-link>
-				</li>
-
-				<li class="relative block sm:inline-block">
-					<nuxt-link
-						to="/yhteys"
-						class="
-							block
-							no-underline
-							hover:underline
-							uppercase
-							p-2
-						"
-					>
-						Ota yhteyttä
+						{{ e.name }}
 					</nuxt-link>
 				</li>
 			</ul>
@@ -184,23 +67,54 @@
 <script>
 	export default {
 		name: "Header",
-		components: {
-		},
+		components: {},
 		data() {
 			return {
 				active: null,
-				hover: false,
-				scrollPosition: 0,
-				home: null,
+				menu: [
+					{
+						name: "Etusivu",
+						path: "",
+					},
+					{
+						name: "Kotisivut",
+						path: "kotisivut-yritykselle",
+					},
+					{
+						name: "Verkkokaupat",
+						path: "verkkokauppa-yritykselle",
+					},
+					{
+						name: "Urheilusaitti",
+						path: "sportti",
+					},
+					{
+						name: "Hakukoneoptimointi",
+						path: "hakukoneoptimointi",
+					},
+					{
+						name: "Verkkotunnukset",
+						path: "verkkotunnukset",
+					},
+					{
+						name: "Ylläpitopalvelut",
+						path: "yllapito",
+					},
+					{
+						name: "Referenssit",
+						path: "referenssit",
+					},
+					{
+						name: "Ota yhteyttä",
+						path: "yhteys",
+					},
+				],
 			};
 		},
 		methods: {
 			openMenu() {
 				this.active = this.active ? null : "open";
 			},
-		},
-		mounted() {
-			this.path = $nuxt.$route.path;
 		},
 	};
 </script>

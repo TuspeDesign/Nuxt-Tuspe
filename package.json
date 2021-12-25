@@ -9,12 +9,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^3.19.3",
+    "core-js": "^3.20.1",
     "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
     "@nuxtjs/tailwindcss": "^4.2.1",
-    "postcss": "^8.4.4"
+    "postcss": "^8.4.5"
   }
 }
