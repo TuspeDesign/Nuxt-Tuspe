@@ -11,9 +11,11 @@ module.exports = {
 		purgeLayersByDefault: true,
 	},
 	content: [
-		'./pages/*.vue',
-		'./components/*.vue',
-		'./dist/**/*.{html,js}'
+		`components/**/*.{vue,js}`,
+		`layouts/**/*.vue`,
+		`pages/**/*.vue`,
+		`plugins/**/*.{js,ts}`,
+		`nuxt.config.{js,ts}`
 	],
 	theme: {
 		screens: {
