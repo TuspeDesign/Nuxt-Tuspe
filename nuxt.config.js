@@ -36,9 +36,7 @@ export default {
 		],
 		link: [
 			{ rel: 'shortcut icon', type: 'image/x-icon', size: "16x16", href: 'https://tuspe.com/favicon.ico' },
-			{ rel: 'icon', type: 'image/png', size: "96x96", href: 'https://tuspe.com/favicon.png' },
-			{ rel: 'me', type: 'text/html', href: 'https://timoanttila.com', title: 'Yrittäjän henkilökohtainen sivusto' },
-			{ rel: 'me', type: 'application/atom+xml', href: 'https://github.com/TuspeDesign/Nuxt-Tuspe/commits/master.atom', title: 'Uusimmat muutokset projektiin Githubissa' }
+			{ rel: 'icon', type: 'image/png', size: "96x96", href: 'https://tuspe.com/favicon.png' }
 		],
 		script: [
 			{

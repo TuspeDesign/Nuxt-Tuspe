@@ -1,25 +1,7 @@
 <template>
 	<div>
-		<nuxt-link
-			id="logo"
-			class="lg:absolute lg:top-6 lg:left-6 lg:z-40 w-28 block mx-auto"
-			to="/"
-			rel="home"
-			title="Tuspe Design Oy - Laadukkaat kotisivut ja verkkokaupat yritykselle"
-		>
-			<picture>
-				<source srcset="/images/tuspe-logo.webp" type="image/webp" />
-				<source srcset="/images/tuspe-logo.png" type="image/png" />
-				<img
-					class="inline-block"
-					src="/images/tuspe-logo.png"
-					alt="Tuspe Design Oy"
-				/>
-			</picture>
-		</nuxt-link>
-
 		<div class="text-center">
-			<h1 class="text-4xl font-bold pt-4 lg:pt-10 pb-20 m-0 text-primary">
+			<h1 class="text-4xl font-bold pb-20 m-0 text-primary">
 				Miksi tyytyä hyvään,<br />kun voi saada
 				<nuxt-link
 					to="/kotisivut-yritykselle"
@@ -185,6 +167,20 @@
 						name: "twitter:image:alt",
 						content:
 							"Luomme kotisivuja ja verkkokauppoja, jotka tekevät sinun elämästä helppoa",
+					},
+				],
+				link: [
+					{
+						rel: "me",
+						type: "text/html",
+						href: "https://timoanttila.com",
+						title: "Yrittäjän henkilökohtainen sivusto",
+					},
+					{
+						rel: "me",
+						type: "application/atom+xml",
+						href: "https://github.com/TuspeDesign/Nuxt-Tuspe/commits/master.atom",
+						title: "Uusimmat muutokset projektiin Githubissa",
 					},
 				],
 			};

@@ -43,6 +43,7 @@
 	--bg-primary: #c9a787;
 	--bg-menu: #a47146;
 	--bg-box: #dbc4b0;
+	--shadow: rgba(0 0 0 / 30%)
 }
 
 body {
@@ -120,3 +121,7 @@ svg { fill: var(--text-link-menu) }
 .border-color { border: 2px solid }
 .border-color:not(.border-active) { border-color: rgba(255 255 255 / 87%) }
 .border-color.border-active { border-color: var(--text-link) }
+
+.border-bottom {
+	border-bottom: 1px solid #eee
+}

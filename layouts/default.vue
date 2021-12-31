@@ -160,10 +160,16 @@
 			</div>
 
 			<nav
-				class="pr-14 grid h-screen text-center px-6"
+				class="pr-14 block h-screen text-center px-6"
 				:class="{ active: active, hidden: !active }"
 			>
-				<ul class="self-center m-0 p-0">
+				<div class="border-bottom mb-4">
+					<h2 class="text-title font-bold text-xl my-3">
+						Tuspe Design
+					</h2>
+				</div>
+
+				<ul class="m-0 p-0">
 					<li
 						v-for="(e, i) in menu"
 						:key="i"
@@ -210,9 +216,9 @@
 				mode: "light",
 				modes: [
 					{ name: "light", color: "#f3f5f4" },
-					{ name: "sepia", color: "#c9a787" },
-					{ name: "dark", color: "#111" },
 					{ name: "blue", color: "#04293a" },
+					{ name: "dark", color: "#121212" },
+					{ name: "sepia", color: "#c9a787" },
 				],
 				active: null,
 				fontSize: 16,
