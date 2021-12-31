@@ -28,7 +28,7 @@ module.exports = {
 			'lg': '1.125em',
 			'xl': '1.25em',
 			'4xl': [
-				'clamp(1.8em, 2.2em, 5vw)', {
+				'clamp(1.4em, 2.2em, 5vw)', {
 					lineHeight: '1.2',
 				}
 			]

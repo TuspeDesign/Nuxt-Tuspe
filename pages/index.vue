@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="pt-4">
 		<div class="text-center">
 			<h1 class="text-4xl font-bold pb-20 m-0 text-primary">
 				Miksi tyytyä hyvään,<br />kun voi saada
@@ -12,7 +12,7 @@
 			</h1>
 		</div>
 
-		<ul class="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 m-0 p-0">
+		<ul class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-10 m-0 p-0">
 			<li
 				v-for="(e, i) in menu"
 				:key="i"
@@ -69,7 +69,7 @@
 								box-shadow
 							"
 						>
-							<h2 class="text-lg font-bold m-0" v-html="e.name" />
+							<h2 class="text-xl font-bold m-0" v-html="e.name" />
 							<div class="description mt-2 text-sm">
 								{{ e.description }}
 							</div>
@@ -89,17 +89,25 @@
 				tai uudista nykyiset sivusi.<br />
 				Ota yhteyttä, saat ilmaisen kartoituksen verkkosivustosta ja
 				ehdotuksen,<br />
-				miten voisimme parantaa myyntiänne.
+				miten voisimme parantaa myyntiänne. Kartoitus ei ole sitova.
 			</p>
 
-			<p>
-				<nuxt-link
-					class="button"
-					to="/yhteys"
-					title="Ota rohkeasti yhteyttä ja tutustutaan!"
-				>
-					Ilmainen kartoitus!
-				</nuxt-link>
+			<h3 class="text-title font-bold text-xl mt-6 mb-0">
+				Tuspe Design Oy
+			</h3>
+			<p class="mt-2">
+				<a
+					class="text-primary no-underline"
+					href="tel:+358407746121"
+					rel="nofollow"
+					>+358 40 774 6121</a
+				><br />
+				<a
+					class="text-primary no-underline"
+					href="mailto:moro@tuspe.com"
+					rel="nofollow"
+					>moro@tuspe.com</a
+				><br /><span class="text-primary">3129423-2</span>
 			</p>
 		</div>
 	</div>

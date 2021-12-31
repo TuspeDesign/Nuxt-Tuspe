@@ -1,5 +1,5 @@
 <template>
-	<div id="prison" class="bg-primary w-full" :class="mode">
+	<div id="prison" class="bg-primary w-full min-h-screen" :class="mode">
 		<a class="hidden" href="#content">Sisältö</a>
 
 		<header
@@ -17,7 +17,7 @@
 					title="Tuspe Design Oy"
 					aria-label="Linkki etusivulle"
 				>
-					<span class="self-center">T</span>
+					<span class="self-center" aria-label="Tuspe">T</span>
 				</nuxt-link>
 
 				<button
@@ -193,15 +193,7 @@
 		>
 			<div
 				id="content"
-				class="
-					max-w-screen-2xl
-					mx-auto
-					relative
-					py-6
-					px-4
-					lg:px-6
-					2xl:px-10
-				"
+				class="max-w-screen-2xl mx-auto relative pt-6 2xl:px-10"
 			>
 				<Nuxt keep-alive />
 			</div>
@@ -250,10 +242,6 @@
 					{
 						name: "Ylläpitopalvelut",
 						path: "yllapito",
-					},
-					{
-						name: "Referenssit",
-						path: "referenssit",
 					},
 					{
 						name: "Ota yhteyttä",

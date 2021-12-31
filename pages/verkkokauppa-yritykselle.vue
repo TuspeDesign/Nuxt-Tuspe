@@ -7,7 +7,15 @@
 			/>
 			<div id="description" class="grid">
 				<div class="self-center max-w-prose mx-auto">
-					<h1 class="text-title text-4xl font-norm mt-0 mb-8">
+					<h1
+						class="
+							text-title text-4xl
+							font-bold
+							mb-8
+							mt-0
+							text-center
+						"
+					>
 						Myyntiä 24/7 vaikka ympäri maailman
 					</h1>
 
@@ -32,7 +40,7 @@
 						</p>
 					</div>
 
-					<div class="mt-6">
+					<div class="mt-10 text-center">
 						<nuxt-link to="/yhteys" class="button"
 							>Kauppa kuntoon!</nuxt-link
 						>
@@ -41,64 +49,60 @@
 			</div>
 		</section>
 
-		<section id="longDescription" class="max-w-prose mx-auto mt-12">
-			<h2
-				class="
-					text-title text-4xl
-					font-norm
-					mb-8
-					leading-tight
-					text-center
-				"
-			>
-				Kauppa, josta asiakkaasi lähtee ostoskassi mukanaan
-			</h2>
+		<section id="longDescription" class="py-8 mt-8">
+			<div class="max-w-prose mx-auto">
+				<h2 class="text-title text-4xl font-norm mb-8 mt-0 text-center">
+					Kauppa, josta asiakkaasi lähtee ostoskassi mukanaan
+				</h2>
 
-			<div class="text-primary">
-				<p>
-					Verkkokaupassa teknisen toteutuksen lisäksi on hyvä
-					huomioida visuaalisuus sekä tuotteiden kertova ja
-					informatiivinen teksti. Tuotekuvilla ja videoilla on myös
-					suuri merkitys, sillä asiakas ostaa tuotteen varmemmin, mitä
-					enemmän ostopäätöstä vahvistavaa tietoa siitä on tarjolla.
-					Tekstin pitäisi olla myös mahdollisimman uniikkia sisältäen
-					sopivasti avainsanoja. Kyllä, mahdollisimman hyviä
-					hakusanoja pitäisi olla otsikoissa, osoitteissa ja
-					tuotetekstissä.
-				</p>
-				<p>
-					Kuulostaako vaikealle? Ei hätää, meidän kautta on
-					mahdollista tilata myös tuotekuvat ja hyvin optimoidut
-					tekstit tuotesivuille ja muualle kauppaan. Miksi tuhlata
-					omaa aikaa miettimiseen, jos voi jättää ongelmat
-					ammattilaiselle ja keskittyä omaan ydinbisnekseen?
-				</p>
-				<p>
-					Ennen projektin alkua määrittelemme tarkkaan mitkä ovat
-					sinun unelmasi ja teemme tarjouksen sen perusteella.
-					Tarvittaessa graafkko tekee teemasta luonnoksen minkä
-					perusteella koodarit koodaavat siitä kauniin, nopean ja
-					helposti päivitettävän kokonaisuuden. Emme käytä valmiita
-					teemoja vaan räätälöimme koodin juuri sinulle ja olemme
-					henkilökohtaisesti vastuussa sen toimivuudesta. Lopputulos
-					on viisaasti rakennettu myyntikanava eikä vain teknisesti
-					kaunis toteutus.
-				</p>
-				<p>
-					Haluamme kannustaa sinua kansainväliseen kauppaan, joten
-					meidän kauppaan rajoittamattomasti tuotteita ja kieliä ilman
-					lisämaksua. Valmiit integraatiot löytyvät yleisimmille
-					maksuliikenteen tarjoajille emmekä rajoita kuljetusyhtiöitä.
-					Kysy meiltä parhaat kumppanit juuri sinun tarpeisiin.
-				</p>
-				<p>
-					Maksatko liikaa nykyisestä verkkokaupasta? Onko verkkokauppa
-					viimeisen päälle optimoitu vai voisiko jotain vielä
-					parantaa? Alkaako vanha verkkokauppa olemaan liian kankea
-					tulevaisuuden kasvulle? Tarvitsetko integraation? Tilaa
-					ilmainen tilanteen kartoitus ja keskustellaan miten voisimme
-					auttaa sinua myymään paremmin.
-				</p>
+				<div class="text-primary">
+					<p>
+						Verkkokaupassa teknisen toteutuksen lisäksi on hyvä
+						huomioida visuaalisuus sekä tuotteiden kertova ja
+						informatiivinen teksti. Tuotekuvilla ja videoilla on
+						myös suuri merkitys, sillä asiakas ostaa tuotteen
+						varmemmin, mitä enemmän ostopäätöstä vahvistavaa tietoa
+						siitä on tarjolla. Tekstin pitäisi olla myös
+						mahdollisimman uniikkia sisältäen sopivasti avainsanoja.
+						Kyllä, mahdollisimman hyviä hakusanoja pitäisi olla
+						otsikoissa, osoitteissa ja tuotetekstissä.
+					</p>
+					<p>
+						Kuulostaako vaikealle? Ei hätää, meidän kautta on
+						mahdollista tilata myös tuotekuvat ja hyvin optimoidut
+						tekstit tuotesivuille ja muualle kauppaan. Miksi tuhlata
+						omaa aikaa miettimiseen, jos voi jättää ongelmat
+						ammattilaiselle ja keskittyä omaan ydinbisnekseen?
+					</p>
+					<p>
+						Ennen projektin alkua määrittelemme tarkkaan mitkä ovat
+						sinun unelmasi ja teemme tarjouksen sen perusteella.
+						Tarvittaessa graafkko tekee teemasta luonnoksen minkä
+						perusteella koodarit koodaavat siitä kauniin, nopean ja
+						helposti päivitettävän kokonaisuuden. Emme käytä
+						valmiita teemoja vaan räätälöimme koodin juuri sinulle
+						ja olemme henkilökohtaisesti vastuussa sen
+						toimivuudesta. Lopputulos on viisaasti rakennettu
+						myyntikanava eikä vain teknisesti kaunis toteutus.
+					</p>
+					<p>
+						Haluamme kannustaa sinua kansainväliseen kauppaan, joten
+						meidän kauppaan rajoittamattomasti tuotteita ja kieliä
+						ilman lisämaksua. Valmiit integraatiot löytyvät
+						yleisimmille maksuliikenteen tarjoajille emmekä rajoita
+						kuljetusyhtiöitä. Kysy meiltä parhaat kumppanit juuri
+						sinun tarpeisiin.
+					</p>
+					<p>
+						Maksatko liikaa nykyisestä verkkokaupasta? Onko
+						verkkokauppa viimeisen päälle optimoitu vai voisiko
+						jotain vielä parantaa? Alkaako vanha verkkokauppa
+						olemaan liian kankea tulevaisuuden kasvulle? Tarvitsetko
+						integraation? Tilaa ilmainen tilanteen kartoitus ja
+						keskustellaan miten voisimme auttaa sinua myymään
+						paremmin.
+					</p>
+				</div>
 			</div>
 		</section>
 	</div>

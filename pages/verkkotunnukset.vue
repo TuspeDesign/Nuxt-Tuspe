@@ -5,7 +5,13 @@
 			<div id="description" class="grid">
 				<div class="self-center max-w-prose mx-auto">
 					<h1
-						class="text-title text-4xl font-norm mb-8 leading-tight"
+						class="
+							text-title text-4xl
+							font-bold
+							mb-8
+							mt-0
+							text-center
+						"
 					>
 						{{ title }}
 					</h1>
@@ -31,7 +37,7 @@
 						</p>
 					</div>
 
-					<div class="mt-6">
+					<div class="mt-6 text-center">
 						<nuxt-link to="/yhteys" class="button"
 							>Nimet kuntoon!</nuxt-link
 						>
@@ -40,89 +46,78 @@
 			</div>
 		</section>
 
-		<section id="longDescription" class="max-w-prose mx-auto px-6 py-12">
-			<h2 class="text-title text-4xl mt-0 mb-8 leading-tight text-center">
-				Huolehdimme kaiken valmiiksi
-			</h2>
+		<section id="longDescription" class="py-8 mt-8">
+			<div class="max-w-prose mx-auto">
+				<h2 class="text-title text-4xl font-norm mb-8 mt-0 text-center">
+					Huolehdimme kaiken valmiiksi
+				</h2>
 
-			<div class="text-primary">
-				<ul class="mt-0 mb-6 p-0">
-					<li>
-						Verkkotunnuksen rekisteröinti sinun tiedoillasi (<a
-							class="text-link"
-							href="https://www.traficom.fi/fi/viestinta/fi-verkkotunnukset/fi-verkkotunnushaku"
-							title="Tarkista, onko haluamasi fi-verkkotunnus vapaana."
-							target="_blank"
-							hreflang="fi"
-							>Traficom</a
-						>
-						/
+				<div class="text-primary">
+					<ul class="mt-0 mb-6 p-0">
+						<li>
+							Verkkotunnuksen rekisteröinti sinun tiedoillasi.
+						</li>
+						<li>
+							Uusimme vuosittain verkkotunnuksen automaattisesti.
+						</li>
+						<li>
+							Ilmaiset nimipalvelimet tarvittaessa (<a
+								class="text-link"
+								href="https://www.cloudflare.com/"
+								title="Suojaa palvelusi Cloudflaren avulla"
+								target="_blank"
+								hreflang="en"
+								>Cloudflare</a
+							>).
+						</li>
+						<li>Sähköpostiasiat kuntoon.</li>
+						<li>
+							Verkkotunnuksien rekisteröinnissä mahdollisimman
+							halvat hinnat sekä mahdollisesti muita rahan
+							arvoisia vinkkejä tulevaisuudelle.
+						</li>
+					</ul>
+
+					<p>
+						Emme usko määräaikaisiin sopimuksiin vaan verkkotunnus
+						on aina sinun eli voit koska tahansa siirtää
+						verkkotunnuksen meiltä toiselle palveluntarjoajalle tai
+						vaihtaa haluamasi nimipalvelimet siihen.
+					</p>
+					<p>
+						Hoidamme tarvittaessa myös yrityksesi sähköpostipalvelut
+						kuntoon. Meiltä onnistuvat omalla verkkotunnuksella
+						ilmaiset Gmail tai Outlook sekä maksulliset
 						<a
 							class="text-link"
-							href="https://www.namecheap.com/"
-							title="Tarkista, onko haluamasi verkkotunnus vapaana."
-							target="_blank"
-							hreflang="en"
-							>Namecheap</a
-						>).
-					</li>
-					<li>Uusimme vuosittain verkkotunnuksen automaattisesti.</li>
-					<li>
-						Ilmaiset nimipalvelimet tarvittaessa (<a
+							href="https://gsuite.google.fi/intl/fi/"
+							title="Tuttu ja turvallinen Gmail yritysten tarpeisiin räätälöitynä."
+							hreflang="fi"
+							>GSuite</a
+						>
+						tai
+						<a
 							class="text-link"
-							href="https://www.cloudflare.com/"
-							title="Suojaa palvelusi Cloudflaren avulla"
-							target="_blank"
-							hreflang="en"
-							>Cloudflare</a
-						>).
-					</li>
-					<li>Sähköpostiasiat kuntoon.</li>
-					<li>
-						Verkkotunnuksien rekisteröinnissä mahdollisimman halvat
-						hinnat sekä mahdollisesti muita rahan arvoisia vinkkejä
-						tulevaisuudelle.
-					</li>
-				</ul>
-
-				<p>
-					Emme usko määräaikaisiin sopimuksiin vaan verkkotunnus on
-					aina sinun eli voit koska tahansa siirtää verkkotunnuksen
-					meiltä toiselle palveluntarjoajalle tai vaihtaa haluamasi
-					nimipalvelimet siihen.
-				</p>
-				<p>
-					Hoidamme tarvittaessa myös yrityksesi sähköpostipalvelut
-					kuntoon. Meiltä onnistuvat omalla verkkotunnuksella ilmaiset
-					Gmail tai Outlook sekä maksulliset
-					<a
-						class="text-link"
-						href="https://gsuite.google.fi/intl/fi/"
-						title="Tuttu ja turvallinen Gmail yritysten tarpeisiin räätälöitynä."
-						hreflang="fi"
-						>GSuite</a
-					>
-					tai
-					<a
-						class="text-link"
-						href="https://www.office.com/?omkt=fi-FI"
-						title="Sähköposti ja Office-sovellusten Premium-versiot"
-						hreflang="fi"
-						>Office 365</a
-					>. Myös käyttöopastusta.
-				</p>
-				<p>
-					Riippumatta siitä kuka huolehtii kotisivujen hyvinvoinnista,
-					suosittelemme käyttämään maksutonta Cloudflare-palvelua (mm.
-					nimipalvelut, kotisivujen suojaus, parempi välimuisti),
-					koska sen avulla on mahdollista nopeuttaa huomattavasti
-					kansainvälistä liikennettä sivustolla sekä suojata yrityksen
-					kotisivut paremmin mahdollisilta palvelunestohyökkäyksiltä.
-					Cloudflarella on palvelimia ympäri maailman, joten jos
-					sivustosi käyttää heidän välimuistia vierailija vierailee
-					todellisuudessa lähimmällä serverillä mikä saattaa vähentää
-					huomattavasti latausaikaa.
-				</p>
+							href="https://www.office.com/?omkt=fi-FI"
+							title="Sähköposti ja Office-sovellusten Premium-versiot"
+							hreflang="fi"
+							>Office 365</a
+						>. Myös käyttöopastusta.
+					</p>
+					<p>
+						Riippumatta siitä kuka huolehtii kotisivujen
+						hyvinvoinnista, suosittelemme käyttämään maksutonta
+						Cloudflare-palvelua (mm. nimipalvelut, kotisivujen
+						suojaus, parempi välimuisti), koska sen avulla on
+						mahdollista nopeuttaa huomattavasti kansainvälistä
+						liikennettä sivustolla sekä suojata yrityksen kotisivut
+						paremmin mahdollisilta palvelunestohyökkäyksiltä.
+						Cloudflarella on palvelimia ympäri maailman, joten jos
+						sivustosi käyttää heidän välimuistia vierailija
+						vierailee todellisuudessa lähimmällä serverillä mikä
+						saattaa vähentää huomattavasti latausaikaa.
+					</p>
+				</div>
 			</div>
 		</section>
 	</div>

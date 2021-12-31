@@ -2,8 +2,8 @@
 	<section id="mainDescription" class="grid gap-10 lg:grid-cols-2">
 		<Photo :image="image" :title="title" />
 		<div id="description" class="grid">
-			<div class="self-center max-w-prose mx-auto">
-				<h1 class="text-title text-4xl font-norm mb-8 leading-tight">
+			<div class="self-center max-w-prose mx-auto text-center">
+				<h1 class="text-title text-4xl font-bold mb-8 mt-0">
 					Yhteystiedot
 				</h1>
 

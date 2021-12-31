@@ -3,8 +3,16 @@
 		<section id="mainDescription" class="grid gap-10 lg:grid-cols-2">
 			<Photo :image="image" :title="title" />
 			<div id="description" class="grid">
-				<div class="self-center max-w-prose mx-auto px-6">
-					<h1 class="text-title text-4xl font-norm mt-0 mb-8">
+				<div class="self-center max-w-prose mx-auto">
+					<h1
+						class="
+							text-title text-4xl
+							font-bold
+							mb-8
+							mt-0
+							text-center
+						"
+					>
 						{{ title }}
 					</h1>
 
@@ -37,63 +45,58 @@
 			</div>
 		</section>
 
-		<section id="longDescription" class="max-w-prose mx-auto mt-12">
-			<h2
-				class="
-					text-title text-4xl
-					font-norm
-					mb-8
-					leading-tight
-					text-center
-				"
-			>
-				Liitetäänkö sinunkin seurasi huippujoukkoon?
-			</h2>
+		<section id="longDescription" class="py-8 mt-8">
+			<div class="max-w-prose mx-auto">
+				<h2 class="text-title text-4xl font-norm mb-8 mt-0 text-center">
+					Liitetäänkö sinunkin seurasi huippujoukkoon?
+				</h2>
 
-			<div class="text-primary">
-				<p>
-					Urheilusaittimme perusominaisuuksiin kuuluvat mm. helposti
-					luotavat uutiset, komeat pelaajaesittelyt, videot
-					YouTubesta, tilastot ja ottelut Tilastokeskukselta, verkko-
-					ja huutokauppa, aitioden esittelyt ja varaukset, kausipaikat
-					sekä paljon muuta seuran elämää helpottavia ominaisuuksia.
-				</p>
+				<div class="text-primary">
+					<p>
+						Urheilusaittimme perusominaisuuksiin kuuluvat mm.
+						helposti luotavat uutiset, komeat pelaajaesittelyt,
+						videot YouTubesta, tilastot ja ottelut
+						Tilastokeskukselta, verkko- ja huutokauppa, aitioden
+						esittelyt ja varaukset, kausipaikat sekä paljon muuta
+						seuran elämää helpottavia ominaisuuksia.
+					</p>
+				</div>
+
+				<ul class="text-center mt-10 mb-0 p-0">
+					<li
+						v-for="(e, i) in clubs"
+						:key="i"
+						class="inline-block align-middle"
+					>
+						<nuxt-link :to="e.url" class="block p-2">
+							<picture class="block">
+								<source
+									:srcset="`/images/logos/${e.image}.webp`"
+									type="image/webp"
+								/>
+								<source
+									:srcset="`/images/logos/${e.image}.jpg`"
+									type="image/jpg"
+								/>
+								<img
+									:src="`/images/logos/${e.image}.jpg`"
+									type="image/jpg"
+									:alt="e.name"
+									width="80"
+									height="80"
+									loading="lazy"
+									class="
+										block
+										transform
+										hover:scale-110
+										duration-300
+									"
+								/>
+							</picture>
+						</nuxt-link>
+					</li>
+				</ul>
 			</div>
-
-			<ul class="text-center mt-10 mb-0 p-0">
-				<li
-					v-for="(e, i) in clubs"
-					:key="i"
-					class="inline-block align-middle"
-				>
-					<nuxt-link :to="e.url" class="block p-2">
-						<picture class="block">
-							<source
-								:srcset="`/images/logos/${e.image}.webp`"
-								type="image/webp"
-							/>
-							<source
-								:srcset="`/images/logos/${e.image}.jpg`"
-								type="image/jpg"
-							/>
-							<img
-								:src="`/images/logos/${e.image}.jpg`"
-								type="image/jpg"
-								:alt="e.name"
-								width="80"
-								height="80"
-								loading="lazy"
-								class="
-									block
-									transform
-									hover:scale-110
-									duration-300
-								"
-							/>
-						</picture>
-					</nuxt-link>
-				</li>
-			</ul>
 		</section>
 	</div>
 </template>

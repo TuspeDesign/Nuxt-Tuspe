@@ -5,7 +5,13 @@
 			<div id="description" class="grid">
 				<div class="self-center max-w-prose mx-auto">
 					<h1
-						class="text-title text-4xl font-norm mb-8 leading-tight"
+						class="
+							text-title text-4xl
+							font-bold
+							mb-8
+							mt-0
+							text-center
+						"
 					>
 						{{ title }}
 					</h1>
@@ -29,7 +35,7 @@
 						</p>
 					</div>
 
-					<div class="mt-6">
+					<div class="mt-6 text-center">
 						<nuxt-link to="/yhteys" class="button"
 							>Hakukoneita viettelemään!</nuxt-link
 						>
@@ -38,45 +44,50 @@
 			</div>
 		</section>
 
-		<section id="longDescription" class="max-w-prose mx-auto px-6 py-12">
-			<h2 class="text-title text-4xl font-norm mb-8 text-center">
-				Mitä hakukoneoptimointi tarkoittaa ja mikä on avainsanatutkimus?
-			</h2>
+		<section id="longDescription" class="py-8 mt-8">
+			<div class="max-w-prose mx-auto">
+				<h2 class="text-title text-4xl font-norm mb-8 mt-0 text-center">
+					Mitä hakukoneoptimointi tarkoittaa ja mikä on
+					avainsanatutkimus?
+				</h2>
 
-			<div class="text-primary">
-				<p>
-					Hakukoneoptimointi (SEO) on sivuston näkyvyyden parantamista
-					hakukonetuloksissa orgaanisen, eli maksuttoman, liikenteen
-					osalta. Hakukoneoptimointi on kustannustehokasta, sillä
-					hyvin optimoitu sivusto löytyy hakukoneista oikeilla
-					hakusanoilla riittävän korkealta orgaanisesti ja se saa myös
-					maksetussa hakukonemainonnassa paremmat laatupisteet.
-				</p>
-				<p>
-					Hakukoneoptimointiin kiinteästi liittyvä avainsanatutkimus
-					kannattaa tehdä jo kotisivujen ja verkkokaupan
-					suunnitteluvaiheessa. Avainsanatutkimuksella selvitetään,
-					miten paljon hakuja tehdään tietyillä sanoilla yrityksesi
-					toimialalla ja tuotteisiin tai palveluihin liittyen. Kun
-					volyymiltaan suurimmat avainsanat on selvitetty, upotetaan
-					ne kotisivujesi tai verkkokauppasi sisältöteksteihin. Näin
-					mahdollistetaan kotisivujesi sekä sen alasivujen löytyminen
-					potentiaalisille asiakkaillesi.
-				</p>
-				<p>
-					Vaikka kotisivusi ja verkkokauppasi olisivat visuaalisesti
-					ja rakenteeltaan upeat ja lyömättömät, eivät asiakkaasi
-					välttämättä löydä sivuja, jollei niitä ole
-					hakukoneoptimoitu.
-				</p>
-				<p>
-					Onko sinulla jo valmiit kotisivut tai verkkokauppa, joiden
-					sisältöä olisi syytä tarkistaa? Kysy kattavaa analyysia
-					sivujesi nykyisestä tilanteesta. Tarkistetaan, ovatko sivusi
-					hakukoneoptimoidut ja miten sivujen tehokkuutta voisi
-					parantaa. Saat myös tekniset parannukset jo olemassa olevaan
-					sivustoon.
-				</p>
+				<div class="text-primary">
+					<p>
+						Hakukoneoptimointi (SEO) on sivuston näkyvyyden
+						parantamista hakukonetuloksissa orgaanisen, eli
+						maksuttoman, liikenteen osalta. Hakukoneoptimointi on
+						kustannustehokasta, sillä hyvin optimoitu sivusto löytyy
+						hakukoneista oikeilla hakusanoilla riittävän korkealta
+						orgaanisesti ja se saa myös maksetussa
+						hakukonemainonnassa paremmat laatupisteet.
+					</p>
+					<p>
+						Hakukoneoptimointiin kiinteästi liittyvä
+						avainsanatutkimus kannattaa tehdä jo kotisivujen ja
+						verkkokaupan suunnitteluvaiheessa.
+						Avainsanatutkimuksella selvitetään, miten paljon hakuja
+						tehdään tietyillä sanoilla yrityksesi toimialalla ja
+						tuotteisiin tai palveluihin liittyen. Kun volyymiltaan
+						suurimmat avainsanat on selvitetty, upotetaan ne
+						kotisivujesi tai verkkokauppasi sisältöteksteihin. Näin
+						mahdollistetaan kotisivujesi sekä sen alasivujen
+						löytyminen potentiaalisille asiakkaillesi.
+					</p>
+					<p>
+						Vaikka kotisivusi ja verkkokauppasi olisivat
+						visuaalisesti ja rakenteeltaan upeat ja lyömättömät,
+						eivät asiakkaasi välttämättä löydä sivuja, jollei niitä
+						ole hakukoneoptimoitu.
+					</p>
+					<p>
+						Onko sinulla jo valmiit kotisivut tai verkkokauppa,
+						joiden sisältöä olisi syytä tarkistaa? Kysy kattavaa
+						analyysia sivujesi nykyisestä tilanteesta. Tarkistetaan,
+						ovatko sivusi hakukoneoptimoidut ja miten sivujen
+						tehokkuutta voisi parantaa. Saat myös tekniset
+						parannukset jo olemassa olevaan sivustoon.
+					</p>
+				</div>
 			</div>
 		</section>
 	</div>
