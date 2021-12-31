@@ -56,7 +56,7 @@
 								<img
 									:src="`/images/${e.image}.jpg`"
 									:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
-									type="image/jpeg"
+									type="image/jpg"
 									:alt="e.name"
 									class="
 										rounded-2xl
