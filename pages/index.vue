@@ -1,76 +1,104 @@
 <template>
-	<div class="container mx-auto font-serif">
+	<div>
+		<nuxt-link
+			id="logo"
+			class="lg:absolute lg:top-0 lg:left-0 lg:z-40 pt-6 block w-32"
+			to="/"
+			rel="home"
+			title="Tuspe Design Oy - Laadukkaat kotisivut ja verkkokaupat yritykselle"
+		>
+			<picture>
+				<source srcset="/images/tuspe-logo.webp" type="image/webp" />
+				<source srcset="/images/tuspe-logo.png" type="image/png" />
+				<img src="/images/tuspe-logo.png" alt="Tuspe Design Oy" />
+			</picture>
+		</nuxt-link>
+
 		<div class="text-center">
-			<h1 class="text-4xl text-blue-900 font-bold mt-10 mb-16">
+			<h1 class="text-4xl font-bold pt-10 pb-20 m-0 text-primary">
 				Miksi tyytyä hyvään,<br />kun voi saada
-				<a
-					class="text-blue-500 hover:underline font-bold"
-					href="/kotisivut-yritykselle"
-					>parasta</a
+				<nuxt-link
+					to="/kotisivut-yritykselle"
+					class="font-bold text-link"
+					title="Kotisivut yritykelle - suunnittelua ja toteutusta suurella sydämellä"
+					>parasta</nuxt-link
 				>?
 			</h1>
 		</div>
 
-		<ul class="grid grid-cols-3 gap-10 m-0 p-0">
+		<ul class="grid lg:grid-cols-2 xl:grid-cols-3 gap-10 m-0 p-0">
 			<li
 				v-for="(e, i) in menu"
 				:key="i"
-				class="relative block transform hover:scale-110 duration-300"
+				class="block lg:transform lg:hover:scale-110 lg:duration-300"
 			>
-				<nuxt-link :to="e.path">
-					<picture>
-						<source
-							:srcset="`/images/${e.image}-700.webp 700w, /images/${e.image}.webp`"
-							type="image/webp"
-						/>
-						<source
-							:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
-							type="image/jpg"
-						/>
-						<img
-							:src="`/images/${e.image}.jpg`"
-							:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
-							type="image/jpeg"
-							:alt="e.name"
-							class="rounded-2xl shadow-lg block"
-							width="436"
-							height="556"
-						/>
-					</picture>
+				<nuxt-link
+					:to="e.path"
+					class="
+						block
+						text-primary
+						max-w-xl
+						mx-auto
+						relative
+						no-underline
+					"
+				>
+					<figure class="block m-0">
+						<picture>
+							<source
+								:srcset="`/images/${e.image}-700.webp 700w, /images/${e.image}.webp`"
+								type="image/webp"
+							/>
+							<source
+								:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
+								type="image/jpg"
+							/>
+							<img
+								:src="`/images/${e.image}.jpg`"
+								:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
+								type="image/jpeg"
+								:alt="e.name"
+								class="
+									rounded-2xl
+									shadow-image
+									block
+									w-full
+									h-auto
+								"
+								width="436"
+								height="556"
+							/>
+						</picture>
 
-					<div
-						class="
-							absolute
-							-top-6
-							-left-14
-							p-6
-							mx-10
-							text-center
-							bg-white
-							rounded-2xl
-							shadow-2xl
-							w-80
-						"
-					>
-						<h2
-							class="text-lg text-blue-900 font-bold m-0"
-							v-html="e.name"
-						/>
-						<div class="description mt-2 text-sm">
-							{{ e.description }}
-						</div>
-					</div>
+						<figcaption
+							class="
+								md:absolute md:-top-8 md:-left-5
+								2xl:-left-8
+								md:w-80
+								lg:p-6
+								sm:rounded-2xl
+								p-4
+								text-center
+								bg-box
+								box-shadow
+							"
+						>
+							<h2 class="text-lg font-bold m-0" v-html="e.name" />
+							<div class="description mt-2 text-sm">
+								{{ e.description }}
+							</div>
+						</figcaption>
+					</figure>
 				</nuxt-link>
 			</li>
 		</ul>
 
 		<div id="contactMe" class="text-center mt-12">
-			<h2 class="text-4xl text-blue-900 font-bold">
-				<span class="text-blue-500 font-bold"
-					>Laadukkaat verkkosivut</span
-				><br />ovat hyvää asiakaspalvelua
+			<h2 class="text-4xl font-bold text-title">
+				Laadukkaat verkkosivut<br />ovat hyvää asiakaspalvelua
 			</h2>
-			<p class="text-base mt-5">
+
+			<p class="text-base mt-5 text-primary">
 				Kehitä liiketoimintaasi tilaamalla uudet kotisivut yrityksellesi
 				tai uudista nykyiset sivusi.<br />
 				Ota yhteyttä, saat ilmaisen kartoituksen verkkosivustosta ja
@@ -78,23 +106,15 @@
 				miten voisimme parantaa myyntiänne.
 			</p>
 
-			<button
-				class="
-					mt-10
-					bg-blue-500
-					hover:bg-blue-800
-					text-white
-					font-bold
-					py-4
-					px-10
-					rounded-lg
-					shadow-lg
-					uppercase
-				"
-				@click="goToYhteys()"
-			>
-				Ilmainen kartoitus!
-			</button>
+			<p>
+				<nuxt-link
+					class="button"
+					to="/yhteys"
+					title="Ota rohkeasti yhteyttä ja tutustutaan!"
+				>
+					Ilmainen kartoitus!
+				</nuxt-link>
+			</p>
 		</div>
 	</div>
 </template>

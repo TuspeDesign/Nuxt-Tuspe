@@ -1,38 +1,92 @@
-:root {
-  --color: #243746;
-  --color-primary: #158876;
-  --color-secondary: #0e2233;
-  --bg: #f3f5f4;
-  --bg-secondary: #fff;
-  --border-color: #ddd;
+.light {
+	--text: rgba(14 34 51 / 87%);
+	--text-title: #0e2233;
+	--text-link: rgb(41 143 214);
+	--text-link-menu: rgb(41 143 214);
+	--text-link-disabled: rgb(41 143 214 / 34%);
+	--text-button: #000;
+	--bg-primary: #f3f5f4;
+	--bg-menu: #fff;
+	--bg-box: #fff;
+	--shadow: rgba(0 0 0 / 30%)
 }
 
-.dark-mode {
-  --color: #ebf4f1;
-  --color-primary: #41b38a;
-  --color-secondary: #fdf9f3;
-  --bg: #091a28;
-  --bg-secondary: #071521;
-  --border-color: #0d2538;
+.dark {
+	--text: rgba(255 255 255 / 87%);
+	--text-title: #fff;
+	--text-link: #c38fff;
+	--text-link-menu: #fff;
+	--text-button: #000;
+	--bg-primary: #121212;
+	--bg-menu: #202020;
+	--bg-box: #383838;
+	--shadow: rgba(0 0 0 / 20%)
 }
-.sepia-mode {
-  --color: #433422;
-  --color-secondary: #504231;
-  --bg: #f1e7d0;
-  --bg-secondary: #eae0c9;
-  --border-color: #ded0bf;
+
+.blue {
+	--text: rgb(214, 210, 196);
+	--text-title: #e2e2e2;
+	--text-link: #ecb365;
+	--text-link-menu: rgba(255 255 255 / 87%);
+	--text-button: #060608;
+	--bg-primary: #04293a;
+	--bg-menu: #064663;
+	--bg-box: #064663;
+	--shadow: rgba(0 0 0 / 30%)
+}
+
+.sepia {
+	--text: #463225;
+	--text-title: #f7ede6;
+	--text-link: #ad3809;
+	--text-button: #fff;
+	--bg-primary: #c9a787;
+	--bg-menu: #a47146;
+	--bg-box: #dbc4b0;
 }
 
 body {
-	font: 400 18px Montserrat, sans-serif;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
 	box-sizing: border-box;
-	margin: 0
+	margin: 0;
 }
+
+@media screen and (min-width:680px){
+	.box-shadow { box-shadow: 2px 2px 5px 0 var(--shadow) }
+	.bg-box { background-color: var(--bg-box) }
+}
+
+@media screen and (max-width:850px){
+	#prison { width: calc(100vw - 48px) }
+}
+
+@media screen and (min-width:850px){
+	#prison { width: calc(100vw - 52px) }
+}
+
+#prison main { font-size: var(--fontSize) }
+
+.text-primary { color: var(--text) }
+
+.text-title { color: var(--text-title) }
+
+.text-link { color: var(--text-link) }
+
+header a,
+header button:not(:disabled) { color: var(--text-link-menu) }
+
+header button:disabled { color: var(--text-link-disabled) }
+
+.bg-primary { background-color: var(--bg-primary) }
+
+.bg-menu { background-color: var(--bg-menu) }
 
 p, ol { line-height: 1.5 }
 
-p + p,
-li + li { margin-top: 1.5rem }
+p + p { margin-top: 1.5rem }
+
+p { margin-bottom: 0 }
 
 #mainDescription {
 	height: calc(100vh - 3rem)
@@ -41,5 +95,24 @@ li + li { margin-top: 1.5rem }
 button,
 a { cursor: pointer }
 
-main a:not(.text-white) { color: rgb(14 165 233) }
-main a:not(.text-white):hover { color: rgb(147 51 234) }
+.button {
+	display: inline-block;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 1rem;
+	border: 0;
+	font-size: 1rem;
+	font-weight: 700
+}
+
+.button:not(:hover){
+	color: var(--button);
+	background-color: var(--text-link)
+}
+
+svg { fill: var(--text-link-menu) }
+
+.border-color { border: 2px solid }
+.border-color:not(.border-active) { border-color: rgba(255 255 255 / 87%) }
+.border-color.border-active { border-color: var(--text-link) }
