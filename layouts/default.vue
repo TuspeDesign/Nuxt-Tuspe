@@ -228,7 +228,7 @@
 						path: "verkkokauppa-yritykselle",
 					},
 					{
-						name: "Urheilusaitti",
+						name: "Urheiluseurat",
 						path: "urheilu",
 					},
 					{

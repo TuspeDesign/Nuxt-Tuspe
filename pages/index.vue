@@ -1,7 +1,7 @@
 <template>
-	<div class="pt-4">
+	<div class="pt-4 px-4">
 		<div class="text-center">
-			<h1 class="text-4xl font-bold pb-20 m-0 text-primary">
+			<h1 class="text-4xl font-bold pb-10 md:pb-16 m-0 text-primary">
 				Miksi tyytyä hyvään,<br />kun voi saada
 				<nuxt-link
 					to="/kotisivut-yritykselle"

@@ -36,7 +36,7 @@
 						</p>
 					</div>
 
-					<div class="mt-6">
+					<div class="mt-6 text-center">
 						<nuxt-link class="button" to="/yhteys"
 							>Nyt palloa maaliin!</nuxt-link
 						>
