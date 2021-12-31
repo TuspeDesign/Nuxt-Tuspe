@@ -1,85 +1,103 @@
 <template>
-	<div class="pt-4 px-4">
-		<div class="text-center">
-			<h1 class="text-4xl font-bold pb-10 md:pb-16 m-0 text-primary">
-				Miksi tyytyä hyvään,<br />kun voi saada
-				<nuxt-link
-					to="/kotisivut-yritykselle"
-					class="font-bold text-link"
-					title="Kotisivut yritykelle - suunnittelua ja toteutusta suurella sydämellä"
-					>parasta</nuxt-link
-				>?
-			</h1>
-		</div>
+	<div>
+		<div class="pt-4 px-4">
+			<div class="text-center">
+				<h1 class="text-4xl font-bold pb-10 md:pb-16 m-0 text-primary">
+					Miksi tyytyä hyvään,<br />kun voi saada
+					<nuxt-link
+						to="/kotisivut-yritykselle"
+						class="font-bold text-link"
+						title="Kotisivut yritykelle - suunnittelua ja toteutusta suurella sydämellä"
+						>parasta</nuxt-link
+					>?
+				</h1>
+			</div>
 
-		<ul class="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-10 m-0 p-0">
-			<li
-				v-for="(e, i) in menu"
-				:key="i"
-				class="block lg:transform lg:hover:scale-110 lg:duration-300"
+			<ul
+				class="
+					grid
+					lg:grid-cols-2
+					xl:grid-cols-3
+					gap-4
+					md:gap-10
+					m-0
+					p-0
+				"
 			>
-				<nuxt-link
-					:to="e.path"
+				<li
+					v-for="(e, i) in menu"
+					:key="i"
 					class="
 						block
-						text-primary
-						max-w-xl
-						mx-auto
-						relative
-						no-underline
+						lg:transform lg:hover:scale-110 lg:duration-300
 					"
 				>
-					<figure class="block m-0">
-						<picture>
-							<source
-								:srcset="`/images/${e.image}-700.webp 700w, /images/${e.image}.webp`"
-								type="image/webp"
-							/>
-							<source
-								:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
-								type="image/jpg"
-							/>
-							<img
-								:src="`/images/${e.image}.jpg`"
-								:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
-								type="image/jpeg"
-								:alt="e.name"
+					<nuxt-link
+						:to="e.path"
+						class="
+							block
+							text-primary
+							max-w-xl
+							mx-auto
+							relative
+							no-underline
+						"
+					>
+						<figure class="block m-0">
+							<picture>
+								<source
+									:srcset="`/images/${e.image}-700.webp 700w, /images/${e.image}.webp`"
+									type="image/webp"
+								/>
+								<source
+									:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
+									type="image/jpg"
+								/>
+								<img
+									:src="`/images/${e.image}.jpg`"
+									:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
+									type="image/jpeg"
+									:alt="e.name"
+									class="
+										rounded-2xl
+										shadow-image
+										block
+										w-full
+										h-auto
+									"
+									width="436"
+									height="556"
+								/>
+							</picture>
+
+							<figcaption
 								class="
-									rounded-2xl
-									shadow-image
-									block
-									w-full
-									h-auto
+									md:absolute md:-top-8 md:-left-5
+									2xl:-left-8
+									md:w-80
+									lg:p-6
+									sm:rounded-2xl
+									p-4
+									text-center
+									bg-box
+									box-shadow
 								"
-								width="436"
-								height="556"
-							/>
-						</picture>
+							>
+								<h2
+									class="text-xl font-bold m-0"
+									v-html="e.name"
+								/>
+								<div class="description mt-2 text-sm">
+									{{ e.description }}
+								</div>
+							</figcaption>
+						</figure>
+					</nuxt-link>
+				</li>
+			</ul>
+		</div>
 
-						<figcaption
-							class="
-								md:absolute md:-top-8 md:-left-5
-								2xl:-left-8
-								md:w-80
-								lg:p-6
-								sm:rounded-2xl
-								p-4
-								text-center
-								bg-box
-								box-shadow
-							"
-						>
-							<h2 class="text-xl font-bold m-0" v-html="e.name" />
-							<div class="description mt-2 text-sm">
-								{{ e.description }}
-							</div>
-						</figcaption>
-					</figure>
-				</nuxt-link>
-			</li>
-		</ul>
-
-		<div id="contactMe" class="text-center mt-12">
+		<div id="quality" class="text-center py-6 mt-6 px-4">
 			<h2 class="text-4xl font-bold text-title">
 				Laadukkaat verkkosivut<br />ovat hyvää asiakaspalvelua
 			</h2>
