@@ -1,64 +1,204 @@
 <template>
-    <div class="container mx-auto py-10 font-serif">
-        <div class="grid grid-cols-2 gap-6">
-            <div class="m-auto">
-                <img class="rounded-3xl" src="https://tuspe.com/images/websites-page.webp">
-            </div>
+	<div>
+		<section id="mainDescription" class="grid gap-10 grid-cols-2 my-6">
+			<Photo
+				:image="image"
+				title="Kotisivut yritykselle ketterästi ja ammattitaidolla"
+			/>
+			<div id="description" class="grid">
+				<div class="self-center max-w-prose mx-auto px-6">
+					<h1
+						class="
+							text-blue-800
+							dark:text-gray-50
+							text-5xl
+							font-norm
+							mb-8
+							leading-tight
+						"
+					>
+						{{ title }}
+					</h1>
 
-             <div class="m-auto">
-                <h1 class="text-4xl text-blue-900">Suunnittelua ja toteutusta suurella sydämellä</h1>
-                <p class="mt-10 text-">Tehdäänkö asioista helppoa ja sujuvaa? Verkkoviidakossa suunnistamisen ei tarvitse olla hankalaa ja aikaa vievää. Jos haluat yrityksesi koko verkkonäkyvyyden kerralla kuntoon, olet juuri nyt oikeassa osoitteessa.</p>
-                <p class="mt-5">Kokemus, aito into ja asiakkaiden toimeksiannot sydämellä tehtynä luovat tekemisemme moottorin. Emme lupaa kuuta taivaalta, mutta meillä kotisivusi ja verkkokauppasi suunnittelu ja toteutus ovat luotettavissa käsissä.</p>
-                <p class="mt-5">Paiskataanko kättä ja laitetaan hihat heilumaan?</p>
+					<div class="dark:text-gray-50">
+						<p>
+							Tehdäänkö asioista helppoa ja sujuvaa?
+							Verkkoviidakossa suunnistamisen ei tarvitse olla
+							hankalaa ja aikaa vievää. Jos haluat yrityksesi koko
+							verkkonäkyvyyden kerralla kuntoon, olet juuri nyt
+							oikeassa osoitteessa.
+						</p>
+						<p>
+							Kokemus, aito into ja asiakkaiden toimeksiannot
+							sydämellä tehtynä luovat tekemisemme moottorin. Emme
+							lupaa kuuta taivaalta, mutta meillä kotisivusi ja
+							verkkokauppasi suunnittelu ja toteutus ovat
+							luotettavissa käsissä.
+						</p>
+						<p>Paiskataanko kättä ja laitetaan hihat heilumaan?</p>
+					</div>
 
-                <button class="mt-10 bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full" @click="goToYhteys()"> Luodaan fiiliksiä! </button>
-            </div>
-        </div>
+					<p>
+						<nuxt-link
+							to="/yhteys"
+							class="
+								bg-blue-800
+								text-white
+								px-10
+								py-4
+								uppercase
+								inline-block
+								shadow-lg
+								rounded-2xl
+								hover:bg-purple-800
+								cursor-pointer
+								no-underline
+							"
+							>Luodaan fiiliksiä!</nuxt-link
+						>
+					</p>
+				</div>
+			</div>
+		</section>
 
-        <div class="grid grid-cols-1 gap-6 m-auto mx-15 px-20 text-left">
-            <h2 class="text-3xl text-blue-900 mt-20 text-center">Avaimet käteen</h2>
+		<section id="longDescription" class="max-w-prose mx-auto px-6 py-12">
+			<h2
+				class="
+					text-blue-800 text-5xl
+					font-norm
+					mb-8
+					leading-tight
+					text-center
+				"
+			>
+				Avaimet käteen
+			</h2>
 
-            <p class="mt-1">Se tunne, kun jäät koukkuun hyvään kirjaan tai sarjaan.. Mitäs jos luotaisiin sama fiilis asiakkaallesi kotisivuistasi?</p>
-		    <p class="mt-1">Olipa kyseessä kotisivut tai <a class="text-blue-500 hover:underline" href="/verkkokauppa-yritykselle">verkkokauppa yrityksellesi</a>, saat meiltä avaimet käteen-ratkaisun. Lopputulos ei ole pelkkä teknisesti kaunis toteutus vaan viisaasti rakennettu myyntikanava, jonka sisältö ja ulkoasu puhuttelevat asiakkaitasi juuri oikealla tavalla. Luodaan sinun yrityksen näköinen kotisivu.</p>
-		    <p class="mt-1">Kotisivuilla on suuri merkitys edelleen tämän päivän digimaailmassa. Kotisivu on alusta, jossa kerrot yrityksesi tarinan ja saat asiakkaasi kiinnostumaan tuotteistasi ja palveluistasi. Se on myyntikanava ja yrityksesi kotipaikka verkossa. Somekanavat voivat tukea myyntiä ja näkyvyyttä, mutta omat kotisivut tiivistää kaiken yhteen paikkaan.</p>
-		    <p class="mt-1">Kun mietit yhteistyökumppania kotisivujesi tekijälle, huomio suunnittelussa, toteutuksessa ja hinnassa, mitä kaikkea todellisuudessa saat:</p>
-		    <ul class="mt-1 text-left">
-			    <li>- Tarvitsetko vain teknisen ratkaisun, jonne tuotat itse sisällön?</li>
-			    <li>- Mitä analytiikkatyökaluja tarvitaan, jotta asiakkaasi ja sidosryhmäsi löytävät yrityksesi tuotteet ja palvelut?</li>
-			    <li>- Mikä on <a href="/hakukoneoptimointi">avainsanatutkimus</a>? Erittäin tärkeä sisällön suunnittelun lähtökohta, jossa kotisivujesi kertova teksti optimoidaan niin, että asiakkaasi löytävät hakemillaan sanoilla hakukoneiden kautta juuri sinun yrityksesi.</li>
-			    <li>- Onko kotisivujen päivittäminen vaikeaa? Ei ole ja kyllä osaat, kun asiat kerrotaan ja opastetaan ymmärrettävästi sinulle kuten me teemme.</li>
-			    <li>- Miten ja mistä hankkia <a href="/verkkotunnus">verkkotunnus</a> (domain)? Ei hätää, me hoidamme tarvittaessa kaiken puolestasi, jonka jälkeen verkkotunnuksen hallinta on joko sinun nimipalvelimilla tai meidän lisämaksuttomilla. Me emme veloita ryöstöhintoja verkkotunnuksen vuosimaksuista.</li>
-			    <li>- Millaisia <a href="/yllapito">ylläpitopalveluita</a> tarvitsen?</li>
-		    </ul>
-		    <p class="mt-1">Et jää yksin näiden kysymysten kanssa vaan me olemme valmiit auttamaan sinut ylitse ongelmien. Laske alustava tarjous kotisivuillesi sen mukaan, miten kattavan kokonaisuuden haluat.</p>
-        
-            <h2 class="text-3xl text-blue-900 mt-10 text-center">Muutama esimerkki ylpeydenaiheistamme</h2>
-            <p class="mt-1 text-center">Liitetäänkö sinunkin yrityksesi tähän huippujoukkueeseen?</p>
-        </div>
+			<p>
+				Se tunne, kun jäät koukkuun hyvään kirjaan tai sarjaan.. Mitäs
+				jos luotaisiin sama fiilis asiakkaallesi kotisivuistasi?
+			</p>
+			<p>
+				Olipa kyseessä kotisivut tai
+				<nuxt-link
+					to="/verkkokauppa-yritykselle"
+					title="Myyntiä 24/7 vaikka ympäri maailman"
+					>verkkokauppa yrityksellesi</nuxt-link
+				>, saat meiltä avaimet käteen-ratkaisun. Lopputulos ei ole
+				pelkkä teknisesti kaunis toteutus vaan viisaasti rakennettu
+				myyntikanava, jonka sisältö ja ulkoasu puhuttelevat asiakkaitasi
+				juuri oikealla tavalla. Luodaan sinun yrityksen näköinen
+				kotisivu.
+			</p>
+			<p>
+				Kotisivuilla on suuri merkitys edelleen tämän päivän
+				digimaailmassa. Kotisivu on alusta, jossa kerrot yrityksesi
+				tarinan ja saat asiakkaasi kiinnostumaan tuotteistasi ja
+				palveluistasi. Se on myyntikanava ja yrityksesi kotipaikka
+				verkossa. Somekanavat voivat tukea myyntiä ja näkyvyyttä, mutta
+				omat kotisivut tiivistää kaiken yhteen paikkaan.
+			</p>
+			<p>
+				Kun mietit yhteistyökumppania kotisivujesi tekijälle, huomio
+				suunnittelussa, toteutuksessa ja hinnassa, mitä kaikkea
+				todellisuudessa saat:
+			</p>
 
-        <div class="grid grid-cols-4 gap-7 m-auto mx-20 mt-10">
-            <p><a href="https://venehotelli.fi/">
-				<img class="rounded-3xl transform hover:scale-110 duration-300" src="https://tuspe.com/images/references/ref-processwire-venehotelli-2020.webp">
-			</a></p>
-            <p><a href="https://www.ratsukko.com/">
-				<img class="rounded-3xl transform hover:scale-110 duration-300" src="https://tuspe.com/images/references/ref-processwire-ratsukko-2020.webp">
-			</a></p>
-            <p><a href="https://quje.fi/">
-				<img class="rounded-3xl transform hover:scale-110 duration-300" src="https://tuspe.com/images/references/ref-processwire-quje-2020.webp">
-			</a></p>
-            <p><a href="https://www.hamari.pro/">
-				<img class="rounded-3xl transform hover:scale-110 duration-300" src="https://tuspe.com/images/references/ref-processwire-hamari-2018.webp">
-			</a></p>
-        </div>
-    </div>
+			<ol class="my-6 mx-0 p-0">
+				<li>
+					Tarvitsetko vain teknisen ratkaisun, jonne tuotat itse
+					sisällön?
+				</li>
+				<li>
+					Mitä analytiikkatyökaluja tarvitaan, jotta asiakkaasi ja
+					sidosryhmäsi löytävät yrityksesi tuotteet ja palvelut?
+				</li>
+				<li>
+					Mikä on
+					<nuxt-link
+						to="/hakukoneoptimointi"
+						title="Mitä hakukoneoptimointi tarkoittaa ja mikä on avainsanatutkimus?"
+						>avainsanatutkimus</nuxt-link
+					>? Erittäin tärkeä sisällön suunnittelun lähtökohta, jossa
+					kotisivujesi kertova teksti optimoidaan niin, että
+					asiakkaasi löytävät hakemillaan sanoilla hakukoneiden kautta
+					juuri sinun yrityksesi.
+				</li>
+				<li>
+					Onko kotisivujen päivittäminen vaikeaa? Ei ole ja kyllä
+					osaat, kun asiat kerrotaan ja opastetaan ymmärrettävästi
+					sinulle kuten me teemme.
+				</li>
+				<li>
+					Miten ja mistä hankkia
+					<nuxt-link
+						to="/verkkotunnus"
+						title="Verkkotunnus eli domain on sivujesi nimi ja osoite"
+						>verkkotunnus</nuxt-link
+					>
+					(domain)? Ei hätää, me hoidamme tarvittaessa kaiken
+					puolestasi, jonka jälkeen verkkotunnuksen hallinta on joko
+					sinun nimipalvelimilla tai meidän lisämaksuttomilla. Me emme
+					veloita ryöstöhintoja verkkotunnuksen vuosimaksuista.
+				</li>
+				<li>
+					Millaisia
+					<nuxt-link
+						to="/yllapito"
+						title="Verkkosivujen luotettavat ylläpitopalvelut"
+						>ylläpitopalveluita</nuxt-link
+					>
+					tarvitsen?
+				</li>
+			</ol>
+
+			<p>
+				Et jää yksin näiden kysymysten kanssa vaan me olemme valmiit
+				auttamaan sinut ylitse ongelmien. Laske alustava tarjous
+				kotisivuillesi sen mukaan, miten kattavan kokonaisuuden haluat.
+			</p>
+		</section>
+	</div>
 </template>
 
 <script>
-    export default {
-        methods:{
-            goToYhteys(){
-                this.$router.push('/yhteys'); 
-            }
-        }
-    }
+	export default {
+		data() {
+			return {
+				title: "Suunnittelua ja toteutusta suurella sydämellä",
+				description:
+					"Kotisivut ovat pelivälineesi digikentällä. Hyvin rakennetut ja toimivat sivut ovat ilo silmälle, aperitiivi ostohalulle sekä maali asiakkaan bisnekseen.",
+				image: "websites-page",
+			};
+		},
+		head() {
+			return {
+				title: "Kotisivut yritykselle ketterästi ja ammattitaidolla | Tuspe Design",
+				meta: [
+					{
+						property: "og:title",
+						name: "twitter:title",
+						content: this.title,
+					},
+					{
+						hid: "seo",
+						name: "description",
+						content: this.description,
+					},
+					{
+						name: "twitter:description",
+						property: "og:description",
+						content: this.description,
+					},
+					{
+						name: "twitter:image",
+						property: "og:image",
+						type: "image/jpg",
+						size: "720x900",
+						content: "https://tuspe.com/images/" + this.image + ".jpg",
+					},
+				],
+			};
+		},
+	};
 </script>

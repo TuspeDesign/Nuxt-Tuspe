@@ -25,14 +25,16 @@
 						/>
 						<source
 							:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
-							type="image/jpeg"
+							type="image/jpg"
 						/>
 						<img
 							:src="`/images/${e.image}.jpg`"
 							:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
 							type="image/jpeg"
 							:alt="e.name"
-							class="rounded-2xl shadow-lg"
+							class="rounded-2xl shadow-lg block"
+							width="436"
+							height="556"
 						/>
 					</picture>
 
@@ -124,12 +126,44 @@
 						path: "yllapito",
 					},
 				],
+				description:
+					"Digitoimisto Tuspe Design toteuttaa käyttäjäystävälliset, visuaalisesti upeat, informatiiviset ja hakukoneoptimoidut kotisivut yritykselle ja urheiluseuralle. Erotu eduksesi!",
 			};
 		},
-		methods: {
-			goToYhteys() {
-				this.$router.push("/yhteys");
-			},
+		head() {
+			return {
+				title: "Tuspe Design | Valloita nettimarkkinat laadukkailla ratkaisuilla",
+				meta: [
+					{
+						property: "og:title",
+						name: "twitter:title",
+						content:
+							"Valloita nettimarkkinat laadukkailla ratkaisuilla!",
+					},
+					{
+						hid: "home",
+						name: "description",
+						content: this.description,
+					},
+					{
+						name: "twitter:description",
+						property: "og:description",
+						content: this.description,
+					},
+					{
+						name: "twitter:image",
+						property: "og:image",
+						type: "image/jpg",
+						size: "1200x630",
+						content: "https://tuspe.com/images/tuspesimple.jpg",
+					},
+					{
+						name: "twitter:image:alt",
+						content:
+							"Luomme kotisivuja ja verkkokauppoja, jotka tekevät sinun elämästä helppoa",
+					},
+				],
+			};
 		},
 	};
 </script>
