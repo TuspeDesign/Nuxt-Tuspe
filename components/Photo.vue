@@ -19,7 +19,7 @@
 			:width="width"
 			:height="height"
 			loading="lazy"
-			class="block h-full w-full max-w-full object-cover"
+			class="block h-full w-full max-w-full object-cover object-center"
 		/>
 	</picture>
 </template>

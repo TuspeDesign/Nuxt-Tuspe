@@ -183,7 +183,7 @@
 				max-w-screen-2xl
 				mx-auto
 				relative
-				py-10
+				py-6
 				px-4
 				lg:px-6
 				2xl:px-10
@@ -207,7 +207,7 @@
 					{ name: "blue", color: "#04293a" },
 				],
 				active: null,
-				fontSize: 18,
+				fontSize: 16,
 				menu: [
 					{
 						name: "Etusivu",
@@ -223,7 +223,7 @@
 					},
 					{
 						name: "Urheilusaitti",
-						path: "sportti",
+						path: "urheilu",
 					},
 					{
 						name: "Hakukoneoptimointi",
@@ -255,7 +255,7 @@
 			changeColors(e) {
 				this.mode = e;
 			},
-			changeSize(e = 18) {
+			changeSize(e = 16) {
 				if (e > 25) e = 25;
 				else if (e < 14) e = 14;
 				this.fontSize = e;

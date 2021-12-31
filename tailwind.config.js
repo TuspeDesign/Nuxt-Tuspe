@@ -19,7 +19,7 @@ module.exports = {
 		screens: {
 			sm: '450px',
 			md: '680px',
-			lg: '850px',
+			lg: '1000px',
 			xl: '1280px',
 			'2xl': '1500px',
 		},
@@ -28,7 +28,7 @@ module.exports = {
 			'lg': '1.125em',
 			'xl': '1.25em',
 			'4xl': [
-				'clamp(1.8em, 2.5em, 5vw)', {
+				'clamp(1.8em, 2.2em, 5vw)', {
 					lineHeight: '1.2',
 				}
 			]

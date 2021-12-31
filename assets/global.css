@@ -65,6 +65,14 @@ body {
 	#prison { width: calc(100vw - 52px) }
 }
 
+@media screen and (max-width:1000px){
+	#mainDescription picture { height: 250px }
+}
+
+@media screen and (min-width:1000px){
+	#mainDescription { height: calc(100vh - 3rem) }
+}
+
 #prison main { font-size: var(--fontSize) }
 
 .text-primary { color: var(--text) }
@@ -87,10 +95,6 @@ p, ol { line-height: 1.5 }
 p + p { margin-top: 1.5rem }
 
 p { margin-bottom: 0 }
-
-#mainDescription {
-	height: calc(100vh - 3rem)
-}
 
 button,
 a { cursor: pointer }
