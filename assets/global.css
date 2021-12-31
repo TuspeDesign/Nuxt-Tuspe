@@ -62,7 +62,7 @@ body {
 }
 
 @media screen and (min-width:850px){
-	#prison { width: calc(100vw - 52px) }
+	#prison main { width: calc(100vw - 52px) }
 }
 
 @media screen and (max-width:1000px){

@@ -2,7 +2,7 @@
 	<div>
 		<nuxt-link
 			id="logo"
-			class="lg:absolute lg:top-0 lg:left-0 lg:z-40 pt-6 block w-32"
+			class="lg:absolute lg:top-6 lg:left-6 lg:z-40 w-28 block mx-auto"
 			to="/"
 			rel="home"
 			title="Tuspe Design Oy - Laadukkaat kotisivut ja verkkokaupat yritykselle"
@@ -10,12 +10,16 @@
 			<picture>
 				<source srcset="/images/tuspe-logo.webp" type="image/webp" />
 				<source srcset="/images/tuspe-logo.png" type="image/png" />
-				<img src="/images/tuspe-logo.png" alt="Tuspe Design Oy" />
+				<img
+					class="inline-block"
+					src="/images/tuspe-logo.png"
+					alt="Tuspe Design Oy"
+				/>
 			</picture>
 		</nuxt-link>
 
 		<div class="text-center">
-			<h1 class="text-4xl font-bold pt-10 pb-20 m-0 text-primary">
+			<h1 class="text-4xl font-bold pt-4 lg:pt-10 pb-20 m-0 text-primary">
 				Miksi tyytyä hyvään,<br />kun voi saada
 				<nuxt-link
 					to="/kotisivut-yritykselle"
