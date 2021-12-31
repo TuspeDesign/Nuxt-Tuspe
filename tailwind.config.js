@@ -31,7 +31,8 @@ module.exports = {
 				'clamp(1.4em, 2.2em, 5vw)', {
 					lineHeight: '1.2',
 				}
-			]
+			],
+			'logo': '2.2rem'
 		},
 		extend: {
 			lineHeight: {

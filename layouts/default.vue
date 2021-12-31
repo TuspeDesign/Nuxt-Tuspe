@@ -12,7 +12,7 @@
 			>
 				<nuxt-link
 					to="/"
-					class="w-12 h-12 grid no-underline font-bold text-4xl"
+					class="w-12 h-12 grid no-underline font-bold text-logo"
 					rel="home"
 					title="Tuspe Design Oy"
 					aria-label="Linkki etusivulle"
