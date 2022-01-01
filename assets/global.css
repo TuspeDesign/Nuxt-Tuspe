@@ -78,7 +78,7 @@ p, ol, ul { line-height: 1.5 }
 
 p + p { margin-top: 1.5rem }
 
-main li + li { margin-top: 1rem }
+main ul:not(.grid) li:not(.inline-block) + li:not(.inline-block) { margin-top: 1rem }
 
 p { margin-bottom: 0 }
 
