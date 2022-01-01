@@ -105,6 +105,7 @@
 						<button
 							@click="changeColors(e.name)"
 							class="w-12 h-10 bg-transparent border-0"
+							:aria-label="`Vaihda teema: ${e.name}`"
 						>
 							<div
 								class="
@@ -136,6 +137,7 @@
 								font-bold
 							"
 							:disabled="fontSize >= 25"
+							aria-label="Suurenna tekstin kokoa"
 						>
 							A+
 						</button>
@@ -152,6 +154,7 @@
 								font-bold
 							"
 							:disabled="fontSize <= 14"
+							aria-label="Pienennä tekstin kokoa"
 						>
 							A-
 						</button>
