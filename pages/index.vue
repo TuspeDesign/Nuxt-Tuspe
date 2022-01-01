@@ -115,13 +115,13 @@
 			</h3>
 			<p class="mt-2">
 				<a
-					class="text-primary no-underline"
+					class="text-primary no-underline inline-block"
 					href="tel:+358407746121"
 					rel="nofollow"
 					>+358 40 774 6121</a
 				><br />
 				<a
-					class="text-primary no-underline"
+					class="text-primary no-underline inline-block"
 					href="mailto:moro@tuspe.com"
 					rel="nofollow"
 					>moro@tuspe.com</a

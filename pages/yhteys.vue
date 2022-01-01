@@ -15,12 +15,12 @@
 					<h3 class="mt-5 mb-0">Timo Anttila</h3>
 					<p class="mt-2">
 						Teknologiajohtaja<br /><a
-							class="text-link"
+							class="text-link inline-block"
 							href="mailto:myynti@tuspe.com"
 							rel="nofollow"
 							>myynti@tuspe.com</a
 						><br /><a
-							class="text-link"
+							class="text-link inline-block"
 							href="tel:+358407746121"
 							rel="nofollow"
 							>040 774 6121</a
@@ -28,13 +28,15 @@
 					</p>
 					<h3 class="mt-5 mb-0">Urheiluseurat</h3>
 					<p class="mt-2">
-						<a class="text-link" href="mailto:myynti@dataline.fi"
+						<a
+							class="text-link inline-block"
+							href="mailto:myynti@dataline.fi"
 							>myynti@dataline.fi</a
 						><br /><a
-							class="text-link"
-							href="tel:+358400273150"
+							class="text-link inline-block"
+							href="tel:+358103192727"
 							rel="nofollow"
-							>0400 273 150</a
+							>010 319 2727</a
 						>
 					</p>
 				</div>
