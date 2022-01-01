@@ -113,20 +113,38 @@
 			<h3 class="text-title font-bold text-xl mt-6 mb-0">
 				Tuspe Design Oy
 			</h3>
-			<p class="mt-2">
+			<p class="mt-2 text-primary">
+				<span class="block">Petäjäpolku 11-15, 37130 Nokia</span>
+				<span class="block">3129423-2</span>
+			</p>
+
+			<div
+				class="
+					grid
+					sm:grid-cols-2
+					gap-2
+					md:gap-6
+					max-w-md
+					mx-auto
+					mt-4
+					md:mt-0
+				"
+			>
 				<a
-					class="text-primary no-underline inline-block"
+					class="text-link grid h-12 md:text-right bg-primary"
 					href="tel:+358407746121"
 					rel="nofollow"
-					>+358 40 774 6121</a
-				><br />
+				>
+					<span class="self-center">+358 40 774 6121</span>
+				</a>
 				<a
-					class="text-primary no-underline inline-block"
+					class="text-link grid h-12 md:text-left bg-primary"
 					href="mailto:moro@tuspe.com"
 					rel="nofollow"
-					>moro@tuspe.com</a
-				><br /><span class="text-primary">3129423-2</span>
-			</p>
+				>
+					<span class="self-center">moro@tuspe.com</span>
+				</a>
+			</div>
 		</div>
 	</div>
 </template>
