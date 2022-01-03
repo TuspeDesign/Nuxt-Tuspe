@@ -4,13 +4,15 @@ export default {
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		title: 'tuspedesign',
+		title: 'Tuspe Design Oy',
 		htmlAttrs: {
 			lang: 'fi'
 		},
 		meta: [
-			{ charset: 'utf-8' },
+			{ charset: 'UTF-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+			{ 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+			{ type: 'date', lang: 'fi-FI' },
 			{ name: 'twitter:site', content: '@tuspedesign' },
 			{ name: 'twitter:creator', content: '@_timoanttila' },
 			{ property: 'og:site_name', content: 'Tuspe Design Oy' },
