@@ -9,12 +9,12 @@
 		/>
 		<source
 			:srcset="`/images/${image}-mobile.jpg 1000w, /images/${image}.jpg`"
-			type="image/jpg"
+			type="image/jpeg"
 		/>
 		<img
 			:src="`/images/${image}.jpg`"
 			:srcset="`/images/${image}-mobile.jpg 1000w, /images/${image}.jpg`"
-			type="image/jpg"
+			type="image/jpeg"
 			:alt="title"
 			:width="width"
 			:height="height"

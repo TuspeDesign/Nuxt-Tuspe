@@ -34,7 +34,8 @@ export default {
 			{ name: 'apple-mobile-web-app-capable', content: 'yes' },
 			{ name: 'apple-mobile-web-app-status-bar-style', content: '#298fd6' },
 			{ name: 'theme-color', content: '#298fd6' },
-			{ name: 'format-detection', content: 'telephone=no' }
+			{ name: 'format-detection', content: 'telephone=no' },
+			{ property: "og:image:type", content: "image/jpeg" },
 		],
 		link: [
 			{ rel: 'shortcut icon', type: 'image/x-icon', size: "16x16", href: 'https://tuspe.com/favicon.ico' },

@@ -51,12 +51,12 @@
 								/>
 								<source
 									:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
-									type="image/jpg"
+									type="image/jpeg"
 								/>
 								<img
 									:src="`/images/${e.image}.jpg`"
 									:srcset="`/images/${e.image}-700.jpg 700w, /images/${e.image}.jpg`"
-									type="image/jpg"
+									type="image/jpeg"
 									:alt="e.name"
 									class="
 										rounded-2xl
@@ -208,12 +208,12 @@
 					{
 						name: "twitter:image",
 						property: "og:image",
-						type: "image/jpg",
+						type: "image/jpeg",
 						content: "https://tuspe.com/images/tuspesimple.jpg",
 					},
 					{
 						property: "og:image:secure_url",
-						type: "image/jpg",
+						type: "image/jpeg",
 						content: "https://tuspe.com/images/tuspesimple.jpg",
 					},
 					{

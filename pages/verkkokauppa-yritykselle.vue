@@ -140,12 +140,12 @@
 					{
 						name: "twitter:image",
 						property: "og:image",
-						type: "image/jpg",
+						type: "image/jpeg",
 						content: "https://tuspe.com/images/" + this.image + ".jpg",
 					},
 					{
 						property: "og:image:secure_url",
-						type: "image/jpg",
+						type: "image/jpeg",
 						content: "https://tuspe.com/images/" + this.image + ".jpg",
 					},
 					{
