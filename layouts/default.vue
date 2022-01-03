@@ -196,7 +196,7 @@
 		>
 			<div
 				id="content"
-				class="max-w-screen-2xl mx-auto relative pt-6 2xl:px-10"
+				class="max-w-screen-2xl mx-auto relative pt-6 px-6 2xl:px-10"
 			>
 				<Nuxt keep-alive />
 			</div>

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="pt-4 px-4">
+		<div class="pt-4 px-6">
 			<div class="text-center">
 				<h1 class="text-4xl font-bold pb-10 md:pb-16 m-0 text-primary">
 					Miksi tyytyä hyvään,<br />kun voi saada
@@ -72,7 +72,7 @@
 
 							<figcaption
 								class="
-									md:absolute md:-top-8 md:-left-5
+									md:absolute md:-top-8 md:-left-4
 									2xl:-left-8
 									md:w-80
 									lg:p-6
@@ -97,7 +97,7 @@
 			</ul>
 		</div>
 
-		<div id="quality" class="text-center py-6 mt-6 px-4">
+		<div id="quality" class="text-center py-6 mt-6 px-6">
 			<h2 class="text-4xl font-bold text-title">
 				Laadukkaat verkkosivut<br />ovat hyvää asiakaspalvelua
 			</h2>
@@ -201,16 +201,28 @@
 						content: this.description,
 					},
 					{
-						name: "twitter:image",
-						property: "og:image",
-						type: "image/jpg",
-						size: "1200x630",
-						content: "https://tuspe.com/images/tuspesimple.jpg",
-					},
-					{
 						name: "twitter:image:alt",
 						content:
 							"Luomme kotisivuja ja verkkokauppoja, jotka tekevät sinun elämästä helppoa",
+					},
+					{
+						name: "twitter:image",
+						property: "og:image",
+						type: "image/jpg",
+						content: "https://tuspe.com/images/tuspesimple.jpg",
+					},
+					{
+						property: "og:image:secure_url",
+						type: "image/jpg",
+						content: "https://tuspe.com/images/tuspesimple.jpg",
+					},
+					{
+						property: "og:image:width",
+						content: "1200",
+					},
+					{
+						property: "og:image:height",
+						content: "630",
 					},
 				],
 				link: [

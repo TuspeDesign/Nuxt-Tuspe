@@ -49,7 +49,7 @@
 	export default {
 		data() {
 			return {
-				title: "Pistetään pallo kentälle ja suunnitellaan strategioita",
+				title: "Pistetään pallo kentälle ja suunnitellaan tulevaisuus yhdessä",
 				description:
 					"Valmiina kehittämään kotisivuja tai kuuntelemaan ilmaisia vinkkejä?",
 				image: "sport-page",
@@ -78,8 +78,24 @@
 						name: "twitter:image",
 						property: "og:image",
 						type: "image/jpg",
-						size: "720x900",
 						content: "https://tuspe.com/images/" + this.image + ".jpg",
+					},
+					{
+						property: "og:image:secure_url",
+						type: "image/jpg",
+						content: "https://tuspe.com/images/" + this.image + ".jpg",
+					},
+					{
+						property: "og:image:width",
+						content: "720",
+					},
+					{
+						property: "og:image:height",
+						content: "900",
+					},
+					{
+						name: "twitter:image:alt",
+						content: this.title,
 					},
 				],
 			};

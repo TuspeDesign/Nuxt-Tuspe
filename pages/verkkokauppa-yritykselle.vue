@@ -141,8 +141,24 @@
 						name: "twitter:image",
 						property: "og:image",
 						type: "image/jpg",
-						size: "720x900",
 						content: "https://tuspe.com/images/" + this.image + ".jpg",
+					},
+					{
+						property: "og:image:secure_url",
+						type: "image/jpg",
+						content: "https://tuspe.com/images/" + this.image + ".jpg",
+					},
+					{
+						property: "og:image:width",
+						content: "720",
+					},
+					{
+						property: "og:image:height",
+						content: "900",
+					},
+					{
+						name: "twitter:image:alt",
+						content: this.title,
 					},
 				],
 			};
