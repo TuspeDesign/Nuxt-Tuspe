@@ -10,7 +10,7 @@
 			contact="Nimet kuntoon!"
 		/>
 
-		<div id="info" class="max-w-prose mx-auto px-6 py-10 md:py-14">
+		<div id="info" class="max-w-prose mx-auto px-4 py-10 md:py-14">
 			<div class="text-content">
 				<p>
 					Verkkotunnus eli domain on sivujesi nimi ja osoite. Jos

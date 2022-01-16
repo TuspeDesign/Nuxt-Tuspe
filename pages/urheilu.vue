@@ -10,7 +10,7 @@
 			contact="Palloa maaliin!"
 		/>
 
-		<div id="info" class="max-w-prose mx-auto px-6 py-10 md:py-14">
+		<div id="info" class="max-w-prose mx-auto px-4 py-10 md:py-14">
 			<h2
 				class="
 					text-xl
@@ -62,12 +62,12 @@
 									type="image/webp"
 								/>
 								<source
-									:srcset="`/images/logos/${e.image}.jpg`"
-									type="image/jpg"
+									:srcset="`/images/logos/${e.image}.png`"
+									type="image/png"
 								/>
 								<img
-									:src="`/images/logos/${e.image}.jpg`"
-									type="image/jpg"
+									:src="`/images/logos/${e.image}.png`"
+									type="image/png"
 									:alt="e.name"
 									width="80"
 									height="80"

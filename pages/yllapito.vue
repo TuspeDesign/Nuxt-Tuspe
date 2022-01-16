@@ -4,13 +4,13 @@
 			titleSmall="Koti nettisivuille"
 			titleBig="Verkkosivujen luotettavat ylläpitopalvelut"
 			description="Älä turhaan stressaa verkkosivuston toimivuudesta tai varmuuskopioista vaan keskity huoletta omaan ydinbisnekseen."
-			:alt="title"
+			alt="Turvallinen koti verkkosivustolle"
 			:linkLeft="linkLeft"
 			:linkRight="linkRight"
 			contact="Parasta pakettiin"
 		/>
 
-		<div id="info" class="max-w-prose mx-auto px-6 py-10 md:py-14">
+		<div id="info" class="max-w-prose mx-auto px-4 py-10 md:py-14">
 			<div class="text-content">
 				<p>
 					Kaikki data on turvassa kahdella 24/7 monitoroidulla

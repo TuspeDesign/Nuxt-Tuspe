@@ -144,7 +144,26 @@
 			</div>
 		</div>
 
-		<Photo :image="image" :title="alt" :width="width" :height="height" />
+		<picture class="block w-full h-full overflow-hidden">
+			<source
+				:srcset="`/images/${image}-667.webp 667w, /images/${image}-1080.webp`"
+				type="image/webp"
+			/>
+			<source
+				:srcset="`/images/${image}-667.jpg 667w, /images/${image}-1080.jpg`"
+				type="image/jpeg"
+			/>
+			<img
+				:src="`/images/${image}-1080.jpg`"
+				:srcset="`/images/${image}-667.jpg 667w, /images/${image}-1080.jpg`"
+				type="image/jpeg"
+				:alt="alt"
+				:width="width"
+				:height="height"
+				loading="lazy"
+				class="block h-full w-full object-cover object-center"
+			/>
+		</picture>
 
 		<div
 			v-if="linkLeft || linkRight"
@@ -208,9 +227,9 @@
 				h-12
 				md:w-12
 				absolute
-				right-4
+				right-0
 				bottom-14
-				md:bottom-6
+				md:bottom-6 md:right-4
 				z-30
 			"
 		>

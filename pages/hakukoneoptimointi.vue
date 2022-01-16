@@ -4,13 +4,13 @@
 			titleSmall="Hakukoneoptimointi"
 			titleBig="Parannetaan sivustosi näkyvyyttä hakukoneissa"
 			description="Hyvin optimoitu nettisivu on Googlen kaveri ja luo maksutonta	liikennettä hakukoneiden kautta. tuottaa maksutonta liikennettä hakukoneista. Kisataan yhdessä ykköseksi!"
-			:alt="title"
+			alt="Hakukoneoptimointi"
 			:linkLeft="linkLeft"
 			:linkRight="linkRight"
 			contact="Hakukoneita viettelemään!"
 		/>
 
-		<div id="info" class="max-w-prose mx-auto px-6 py-10 md:py-14">
+		<div id="info" class="max-w-prose mx-auto px-4 py-10 md:py-14">
 			<div class="text-content">
 				<p>
 					Meidän kaikki sivustomme on teknisesti automaattisesti
