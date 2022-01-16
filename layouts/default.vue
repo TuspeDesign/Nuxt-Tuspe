@@ -204,15 +204,7 @@
 							aria-label="Increase the font size of the site"
 							:disabled="fontSize >= 25"
 						>
-							<div
-								class="
-									grid
-									w-full
-									h-full
-									text-right
-									md:text-center
-								"
-							>
+							<div class="grid w-full h-full text-center">
 								<span
 									class="
 										self-center
@@ -241,15 +233,7 @@
 							aria-label="Reduce the font size of the site"
 							:disabled="fontSize <= 14"
 						>
-							<div
-								class="
-									grid
-									w-full
-									h-full
-									text-right
-									md:text-center
-								"
-							>
+							<div class="grid w-full h-full text-center">
 								<span
 									class="
 										self-center
