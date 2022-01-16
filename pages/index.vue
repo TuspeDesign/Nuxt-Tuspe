@@ -11,7 +11,7 @@
 		/>
 
 		<div id="info" class="py-12 px-6 text-center">
-			<h1 class="text-4xl font-bold text-title">
+			<h1 class="text-xl font-bold text-title leading-snug mt-0 mb-6">
 				Laadukkaat verkkosivut<br />ovat hyvää asiakaspalvelua
 			</h1>
 

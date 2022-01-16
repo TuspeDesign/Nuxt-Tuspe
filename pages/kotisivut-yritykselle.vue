@@ -14,11 +14,13 @@
 		<div id="info" class="max-w-prose mx-auto px-6 py-10 md:py-14">
 			<h2
 				class="
-					text-center text-title text-xl
+					text-xl
 					font-bold
-					leading-tight
+					text-title
+					leading-snug
 					mt-0
 					mb-6
+					text-center
 				"
 			>
 				{{ title }}
