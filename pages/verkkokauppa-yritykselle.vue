@@ -1,110 +1,86 @@
 <template>
 	<div>
-		<section id="mainDescription" class="grid gap-10 lg:grid-cols-2">
-			<Photo
-				:image="image"
-				title="Aloita maailman valloitus Tuspen verkkokaupalla"
-			/>
-			<div id="description" class="grid">
-				<div class="self-center max-w-prose mx-auto">
-					<h1
-						class="
-							text-title text-4xl
-							font-bold
-							mb-8
-							mt-0
-							text-center
-						"
-					>
-						Myyntiä 24/7 vaikka ympäri maailman
-					</h1>
+		<PhotoHero
+			titleSmall="Kauppa auki 24/7"
+			titleBig="Valloita maailman monipuolisella verkkokaupalla"
+			description="Mitä jos pistetään pakettiin kustannustehokas verkkokauppa, joka taipuu yrityksesi tarpeiden mukaan ja joka on räätälöity juuri sinun yritykselle? Sinun tarvitsee vain haaveilla ja me toteutamme unelmasi."
+			alt="Kotisivut yritykselle ketterästi ja ammattitaidolla"
+			:linkLeft="linkLeft"
+			:linkRight="linkRight"
+			contact="Kauppa kuntoon!"
+		/>
 
-					<div class="text-primary">
-						<p>
-							Mitä jos pistetään pakettiin erittäin
-							kustannustehokas verkkokauppa, joka taipuu
-							yrityksesi tarpeiden mukaan ja joka on räätälöity
-							juuri sinun yritykselle? Meiltä verkkokauppa täysin
-							"Avaimet käteen"-palveluna, jossa teema, tuotteet ja
-							kaikki sisältö ovat valmiina. Sinun tarvitsee vain
-							haaveilla ja me toteutamme unelmasi.
-						</p>
-						<p>
-							Olipa kyseessä meidän SaaS-palvelu ProcessWirelle
-							tai WordPress-sivuston Woocommerce, saat aina
-							mutkattoman ja toimivan ratkaisun.
-						</p>
-						<p>
-							Ota rohkeasti yhteyttä ja tilaa ilmainen kartoitus
-							nykyiseen verkkokauppaan tai suunnitelma uuteen.
-						</p>
-					</div>
+		<div id="info" class="max-w-prose mx-auto px-6 py-10 md:py-14">
+			<h2
+				class="
+					text-center text-title text-xl
+					font-bold
+					leading-tight
+					mt-0
+					mb-6
+				"
+			>
+				Kauppa, josta asiakkaasi lähtee ostoskassi mukanaan
+			</h2>
+			<div class="text-content">
+				<p>
+					Verkkokaupassa teknisen toteutuksen lisäksi on hyvä
+					huomioida visuaalisuus sekä tuotteiden kertova ja
+					informatiivinen teksti. Tuotekuvilla ja videoilla on myös
+					suuri merkitys, sillä asiakas ostaa tuotteen varmemmin, mitä
+					enemmän ostopäätöstä vahvistavaa tietoa siitä on tarjolla.
+					Tekstin pitäisi olla myös mahdollisimman uniikkia sisältäen
+					sopivasti avainsanoja. Kyllä, mahdollisimman hyviä
+					hakusanoja pitäisi olla otsikoissa, osoitteissa ja
+					tuotetekstissä.
+				</p>
+				<p>
+					Kuulostaako vaikealle? Ei hätää, meidän kautta on
+					mahdollista tilata myös tuotekuvat ja hyvin optimoidut
+					tekstit tuotesivuille ja muualle kauppaan. Miksi tuhlata
+					omaa aikaa miettimiseen, jos voi jättää ongelmat
+					ammattilaiselle ja keskittyä omaan ydinbisnekseen?
+				</p>
+				<p>
+					Ennen projektin alkua määrittelemme tarkkaan mitkä ovat
+					sinun unelmasi ja teemme tarjouksen sen perusteella.
+					Tarvittaessa graafkko tekee teemasta luonnoksen minkä
+					perusteella koodarit koodaavat siitä kauniin, nopean ja
+					helposti päivitettävän kokonaisuuden. Emme käytä valmiita
+					teemoja vaan räätälöimme koodin juuri sinulle ja olemme
+					henkilökohtaisesti vastuussa sen toimivuudesta. Lopputulos
+					on viisaasti rakennettu myyntikanava eikä vain teknisesti
+					kaunis toteutus.
+				</p>
+				<p>
+					Haluamme kannustaa sinua kansainväliseen kauppaan, joten
+					meidän kauppaan rajoittamattomasti tuotteita ja kieliä ilman
+					lisämaksua. Valmiit integraatiot löytyvät yleisimmille
+					maksuliikenteen tarjoajille emmekä rajoita kuljetusyhtiöitä.
+					Kysy meiltä parhaat kumppanit juuri sinun tarpeisiin.
+				</p>
+				<p>
+					Maksatko liikaa nykyisestä verkkokaupasta? Onko verkkokauppa
+					viimeisen päälle optimoitu vai voisiko jotain vielä
+					parantaa? Alkaako vanha verkkokauppa olemaan liian kankea
+					tulevaisuuden kasvulle? Tarvitsetko integraation? Tilaa
+					ilmainen tilanteen kartoitus ja keskustellaan miten voisimme
+					auttaa sinua myymään paremmin.
+				</p>
 
-					<div class="mt-10 text-center">
-						<nuxt-link to="/yhteys" class="button"
-							>Kauppa kuntoon!</nuxt-link
-						>
-					</div>
-				</div>
+				<p>
+					Olipa kyseessä meidän SaaS-palvelu ProcessWirelle tai
+					WordPress-sivuston Woocommerce, saat aina mutkattoman ja
+					toimivan ratkaisun.
+				</p>
+				<p>
+					Ota rohkeasti yhteyttä ja tilaa ilmainen kartoitus nykyiseen
+					verkkokauppaan tai suunnitelma uuteen.
+				</p>
+
+				<Contact />
 			</div>
-		</section>
-
-		<section id="longDescription" class="py-8 mt-8">
-			<div class="max-w-prose mx-auto">
-				<h2 class="text-title text-4xl font-norm mb-8 mt-0 text-center">
-					Kauppa, josta asiakkaasi lähtee ostoskassi mukanaan
-				</h2>
-
-				<div class="text-primary">
-					<p>
-						Verkkokaupassa teknisen toteutuksen lisäksi on hyvä
-						huomioida visuaalisuus sekä tuotteiden kertova ja
-						informatiivinen teksti. Tuotekuvilla ja videoilla on
-						myös suuri merkitys, sillä asiakas ostaa tuotteen
-						varmemmin, mitä enemmän ostopäätöstä vahvistavaa tietoa
-						siitä on tarjolla. Tekstin pitäisi olla myös
-						mahdollisimman uniikkia sisältäen sopivasti avainsanoja.
-						Kyllä, mahdollisimman hyviä hakusanoja pitäisi olla
-						otsikoissa, osoitteissa ja tuotetekstissä.
-					</p>
-					<p>
-						Kuulostaako vaikealle? Ei hätää, meidän kautta on
-						mahdollista tilata myös tuotekuvat ja hyvin optimoidut
-						tekstit tuotesivuille ja muualle kauppaan. Miksi tuhlata
-						omaa aikaa miettimiseen, jos voi jättää ongelmat
-						ammattilaiselle ja keskittyä omaan ydinbisnekseen?
-					</p>
-					<p>
-						Ennen projektin alkua määrittelemme tarkkaan mitkä ovat
-						sinun unelmasi ja teemme tarjouksen sen perusteella.
-						Tarvittaessa graafkko tekee teemasta luonnoksen minkä
-						perusteella koodarit koodaavat siitä kauniin, nopean ja
-						helposti päivitettävän kokonaisuuden. Emme käytä
-						valmiita teemoja vaan räätälöimme koodin juuri sinulle
-						ja olemme henkilökohtaisesti vastuussa sen
-						toimivuudesta. Lopputulos on viisaasti rakennettu
-						myyntikanava eikä vain teknisesti kaunis toteutus.
-					</p>
-					<p>
-						Haluamme kannustaa sinua kansainväliseen kauppaan, joten
-						meidän kauppaan rajoittamattomasti tuotteita ja kieliä
-						ilman lisämaksua. Valmiit integraatiot löytyvät
-						yleisimmille maksuliikenteen tarjoajille emmekä rajoita
-						kuljetusyhtiöitä. Kysy meiltä parhaat kumppanit juuri
-						sinun tarpeisiin.
-					</p>
-					<p>
-						Maksatko liikaa nykyisestä verkkokaupasta? Onko
-						verkkokauppa viimeisen päälle optimoitu vai voisiko
-						jotain vielä parantaa? Alkaako vanha verkkokauppa
-						olemaan liian kankea tulevaisuuden kasvulle? Tarvitsetko
-						integraation? Tilaa ilmainen tilanteen kartoitus ja
-						keskustellaan miten voisimme auttaa sinua myymään
-						paremmin.
-					</p>
-				</div>
-			</div>
-		</section>
+		</div>
 	</div>
 </template>
 
@@ -112,55 +88,14 @@
 	export default {
 		data() {
 			return {
-				title: "Suunnittelemme ja toteutamme verkkokaupan yrityksellesi",
-				description:
-					"Olipa kyseessä meidän SaaS-palvelu ProcessWirelle tai WordPress-sivuston Woocommerce, saat aina mutkattoman ja toimivan ratkaisun.",
-				image: "webstore-page",
-			};
-		},
-		head() {
-			return {
-				title: this.title + " | Tuspe Design",
-				meta: [
-					{
-						property: "og:title",
-						name: "twitter:title",
-						content: this.title,
-					},
-					{
-						hid: "store",
-						name: "description",
-						content: this.description,
-					},
-					{
-						name: "twitter:description",
-						property: "og:description",
-						content: this.description,
-					},
-					{
-						name: "twitter:image",
-						property: "og:image",
-						type: "image/jpeg",
-						content: "https://tuspe.com/images/" + this.image + ".jpg",
-					},
-					{
-						property: "og:image:secure_url",
-						type: "image/jpeg",
-						content: "https://tuspe.com/images/" + this.image + ".jpg",
-					},
-					{
-						property: "og:image:width",
-						content: "720",
-					},
-					{
-						property: "og:image:height",
-						content: "900",
-					},
-					{
-						name: "twitter:image:alt",
-						content: this.title,
-					},
-				],
+				linkLeft: {
+					name: "Laadukkaat verkkosivut ovat hyvää asiakaspalvelua",
+					path: "kotisivut-yritykselle",
+				},
+				linkRight: {
+					name: "Monipuolinen ja helposti päivitettävä urheilusaitti",
+					path: "urheilu",
+				},
 			};
 		},
 	};

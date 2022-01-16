@@ -1,25 +1,22 @@
 <template>
-	<picture
-		v-if="image"
-		class="block w-full h-full overflow-hidden rounded-2xl shadow-lg"
-	>
+	<picture v-if="image" class="block w-full h-full overflow-hidden">
 		<source
-			:srcset="`/images/${image}-mobile.webp 1000w, /images/${image}.webp`"
+			:srcset="`/images/${image}-667.webp 667w, /images/${image}-1080.webp`"
 			type="image/webp"
 		/>
 		<source
-			:srcset="`/images/${image}-mobile.jpg 1000w, /images/${image}.jpg`"
+			:srcset="`/images/${image}-667.jpg 667w, /images/${image}.jpg`"
 			type="image/jpeg"
 		/>
 		<img
 			:src="`/images/${image}.jpg`"
-			:srcset="`/images/${image}-mobile.jpg 1000w, /images/${image}.jpg`"
+			:srcset="`/images/${image}-667.jpg 667w, /images/${image}.jpg`"
 			type="image/jpeg"
 			:alt="title"
 			:width="width"
 			:height="height"
 			loading="lazy"
-			class="block h-full w-full max-w-full object-cover object-center"
+			class="block h-full w-full object-cover object-center"
 		/>
 	</picture>
 </template>
@@ -38,12 +35,12 @@
 					"Luomme kotisivuja ja verkkokauppoja, jotka tekevät sinun elämästä helppoa",
 			},
 			width: {
-				type: Number,
-				default: 720,
+				type: String,
+				default: 1920,
 			},
 			height: {
-				type: Number,
-				default: 900,
+				type: String,
+				default: 1080,
 			},
 		},
 	};

@@ -26,7 +26,7 @@ export default {
 			{ name: "telephone", property: "og:phone_number", content: "+358407746121" },
 			{ name: 'latitude', property: 'og:latitude', content: '61.489173' },
 			{ name: 'longitude', property: 'og:longitude', content: '23.492723' },
-			{ name: 'geo.region', content: 'fi' },
+			{ name: 'geo.region', content: 'FI-11' },
 			{ name: 'geo.position', content: '61.489173;23.492723' },
 			{ name: 'ICBM', content: '61.489173, 23.492723' },
 			{ name: 'fb:page_id', content: '161472337564741' },
@@ -83,7 +83,6 @@ export default {
 					}],
 					"sameAs": [
 						"https://twitter.com/tuspedesign",
-						"",
 						"https://github.com/TuspeDesign"
 					]
 				}

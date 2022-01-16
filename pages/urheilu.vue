@@ -1,66 +1,51 @@
 <template>
 	<div>
-		<section id="mainDescription" class="grid gap-10 lg:grid-cols-2">
-			<Photo :image="image" :title="title" />
-			<div id="description" class="grid">
-				<div class="self-center max-w-prose mx-auto">
-					<h1
-						class="
-							text-title text-4xl
-							font-bold
-							mb-8
-							mt-0
-							text-center
-						"
-					>
-						{{ title }}
-					</h1>
+		<PhotoHero
+			titleSmall="Urheilu"
+			titleBig="Monipuolinen ja helposti päivitettävä urheilusaitti"
+			description="Kotisivut ovat pelivälineesi digikentällä. Hyvin rakennetut ja toimivat kotisivut ovat ilo silmälle sekä maali bisnekseen. Liity mukaan alati kasvavaan joukkoon."
+			alt="Helppokäyttöinen urheilusaitti seuralle"
+			:linkLeft="linkLeft"
+			:linkRight="linkRight"
+			contact="Palloa maaliin!"
+		/>
 
-					<div class="text-primary">
-						<p>
-							Elämän ei pidä olla vaikeaa, kallista ja aikaa
-							vievää seuran kotisivuja päivittäessä. Mitäs jos
-							hoitaisimme kaikki matsit joukkuettain
-							automaattisesti ja päivittäisimme vielä tuloksetkin
-							pelien jälkeen? Videot? Tilastot? Check. Haluamme
-							säästää sinun aikaasi tärkeämmälle.
-						</p>
-						<p>
-							Olemme kehittäneet urheilusaittimme vastaamaan
-							seurojen tarpeita ja kehitämme sitä koko ajan
-							paremmaksi Mestis-seurojemme avulla. Haluamme, että
-							seurojen fanit saavat erittäin hyvän kokemuksen
-							vierailusta sekä seurojen on helppoa päivittää ja
-							lisätä sisältöä. Ominaisuuksia on automatisoitu niin
-							pitkälle kuin mahdollista.
-						</p>
-					</div>
+		<div id="info" class="max-w-prose mx-auto px-6 py-10 md:py-14">
+			<h2
+				class="
+					text-center text-title text-xl
+					font-bold
+					leading-tight
+					mt-0
+					mb-6
+				"
+			>
+				Liitetäänkö sinunkin seurasi huippujoukkoon?
+			</h2>
+			<div class="text-content">
+				<p>
+					Elämän ei pidä olla vaikeaa, kallista ja aikaa vievää seuran
+					kotisivuja päivittäessä. Mitäs jos hoitaisimme kaikki matsit
+					joukkuettain automaattisesti ja päivittäisimme vielä
+					tuloksetkin pelien jälkeen? Videot? Tilastot? Check.
+					Haluamme säästää sinun aikaasi tärkeämmälle.
+				</p>
+				<p>
+					Olemme kehittäneet urheilusaittimme vastaamaan seurojen
+					tarpeita ja kehitämme sitä koko ajan paremmaksi
+					Mestis-seurojemme avulla. Haluamme, että seurojen fanit
+					saavat erittäin hyvän kokemuksen vierailusta sekä seurojen
+					on helppoa päivittää ja lisätä sisältöä. Ominaisuuksia on
+					automatisoitu niin pitkälle kuin mahdollista.
+				</p>
 
-					<div class="mt-6 text-center">
-						<nuxt-link class="button" to="/yhteys"
-							>Nyt palloa maaliin!</nuxt-link
-						>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="longDescription" class="py-8 mt-8">
-			<div class="max-w-prose mx-auto">
-				<h2 class="text-title text-4xl font-norm mb-8 mt-0 text-center">
-					Liitetäänkö sinunkin seurasi huippujoukkoon?
-				</h2>
-
-				<div class="text-primary">
-					<p>
-						Urheilusaittimme perusominaisuuksiin kuuluvat mm.
-						helposti luotavat uutiset, komeat pelaajaesittelyt,
-						videot YouTubesta, tilastot ja ottelut
-						Tilastokeskukselta, verkko- ja huutokauppa, aitioden
-						esittelyt ja varaukset, kausipaikat sekä paljon muuta
-						seuran elämää helpottavia ominaisuuksia.
-					</p>
-				</div>
+				<p>
+					Urheilusaittimme perusominaisuuksiin kuuluvat mm. helposti
+					luotavat uutiset, komeat pelaajaesittelyt, videot
+					YouTubesta, tilastot ja ottelut Tilastokeskukselta, verkko-
+					ja huutokauppa, aitioden esittelyt ja varaukset, kausipaikat
+					sekä paljon muuta seuran elämää helpottavia ominaisuuksia.
+				</p>
 
 				<ul class="text-center mt-10 mb-0 p-0">
 					<li
@@ -96,8 +81,9 @@
 						</nuxt-link>
 					</li>
 				</ul>
+				<Contact />
 			</div>
-		</section>
+		</div>
 	</div>
 </template>
 
@@ -105,10 +91,6 @@
 	export default {
 		data() {
 			return {
-				title: "Monipuolinen ja helposti päivitettävä urheilusaitti",
-				description:
-					"Kotisivut ovat pelivälineesi digikentällä. Hyvin rakennetut ja toimivat kotisivut ovat ilo silmälle sekä maali bisnekseen. Liity mukaan alati kasvavaan joukkoon.",
-				image: "sport-page",
 				clubs: [
 					{
 						name: "Joensuun Kiekko-Pojat",
@@ -146,51 +128,14 @@
 						image: "pkku",
 					},
 				],
-			};
-		},
-		head() {
-			return {
-				title: "Helppokäyttöinen urheilusaitti seuralle | Tuspe Design",
-				meta: [
-					{
-						property: "og:title",
-						name: "twitter:title",
-						content: this.title,
-					},
-					{
-						hid: "sport",
-						name: "description",
-						content: this.description,
-					},
-					{
-						name: "twitter:description",
-						property: "og:description",
-						content: this.description,
-					},
-					{
-						name: "twitter:image",
-						property: "og:image",
-						type: "image/jpeg",
-						content: "https://tuspe.com/images/" + this.image + ".jpg",
-					},
-					{
-						property: "og:image:secure_url",
-						type: "image/jpeg",
-						content: "https://tuspe.com/images/" + this.image + ".jpg",
-					},
-					{
-						property: "og:image:width",
-						content: "720",
-					},
-					{
-						property: "og:image:height",
-						content: "900",
-					},
-					{
-						name: "twitter:image:alt",
-						content: this.title,
-					},
-				],
+				linkLeft: {
+					name: "Verkkokauppa yritykselle suunnittelusta toteutukseen",
+					path: "verkkokauppa-yritykselle",
+				},
+				linkRight: {
+					name: "Verkkosivujen luotettavat ylläpitopalvelut",
+					path: "yllapito",
+				},
 			};
 		},
 	};

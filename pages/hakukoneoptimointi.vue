@@ -1,95 +1,69 @@
 <template>
 	<div>
-		<section id="mainDescription" class="grid gap-10 lg:grid-cols-2">
-			<Photo :image="image" :title="title" />
-			<div id="description" class="grid">
-				<div class="self-center max-w-prose mx-auto">
-					<h1
-						class="
-							text-title text-4xl
-							font-bold
-							mb-8
-							mt-0
-							text-center
-						"
-					>
-						{{ title }}
-					</h1>
+		<PhotoHero
+			titleSmall="Hakukoneoptimointi"
+			titleBig="Parannetaan sivustosi näkyvyyttä hakukoneissa"
+			description="Hyvin optimoitu nettisivu on Googlen kaveri ja luo maksutonta	liikennettä hakukoneiden kautta. tuottaa maksutonta liikennettä hakukoneista. Kisataan yhdessä ykköseksi!"
+			:alt="title"
+			:linkLeft="linkLeft"
+			:linkRight="linkRight"
+			contact="Hakukoneita viettelemään!"
+		/>
 
-					<div class="text-primary">
-						<p>
-							Meidän kaikki sivustomme on teknisesti
-							automaattisesti optimoituja parhaalla mahdollisella
-							tavalla, samalla tavalla kuin esim. WordPress
-							tarjoaa siihen tarkoitetuilla lisäosillaan.
-							Valitettavasti hakukoneoptimointi on paljon muutakin
-							kuin pelkkää teknistä osaamista. SISÄLTÖ ON KINGI!
-						</p>
-						<p>
-							Otsikoissa ja sisältöteksteissä tulisi olla sopiva
-							määrä hakusanoja, avainsanoja, luomassa parempia
-							hakutuloksia sekä niiden tulisi olla mahdollisimman
-							uniikkeja. Verkkokaupan tuotteet voivat olla samoja
-							kuin kymmenillä tai sadoilla kilpailijoilla, joten
-							miten juuri sinun tuotteesi erottautuvat joukosta?
-						</p>
-					</div>
+		<div id="info" class="max-w-prose mx-auto px-6 py-10 md:py-14">
+			<div class="text-content">
+				<p>
+					Meidän kaikki sivustomme on teknisesti automaattisesti
+					optimoituja parhaalla mahdollisella tavalla, samalla tavalla
+					kuin esim. WordPress tarjoaa siihen tarkoitetuilla
+					lisäosillaan. Valitettavasti hakukoneoptimointi on paljon
+					muutakin kuin pelkkää teknistä osaamista. SISÄLTÖ ON KINGI!
+				</p>
+				<p>
+					Otsikoissa ja sisältöteksteissä tulisi olla sopiva määrä
+					hakusanoja, avainsanoja, luomassa parempia hakutuloksia sekä
+					niiden tulisi olla mahdollisimman uniikkeja. Verkkokaupan
+					tuotteet voivat olla samoja kuin kymmenillä tai sadoilla
+					kilpailijoilla, joten miten juuri sinun tuotteesi
+					erottautuvat joukosta?
+				</p>
 
-					<div class="mt-6 text-center">
-						<nuxt-link to="/yhteys" class="button"
-							>Hakukoneita viettelemään!</nuxt-link
-						>
-					</div>
-				</div>
+				<p>
+					Hakukoneoptimointi (SEO) on sivuston näkyvyyden parantamista
+					hakukonetuloksissa orgaanisen, eli maksuttoman, liikenteen
+					osalta. Hakukoneoptimointi on kustannustehokasta, sillä
+					hyvin optimoitu sivusto löytyy hakukoneista oikeilla
+					hakusanoilla riittävän korkealta orgaanisesti ja se saa myös
+					maksetussa hakukonemainonnassa paremmat laatupisteet.
+				</p>
+				<p>
+					Hakukoneoptimointiin kiinteästi liittyvä avainsanatutkimus
+					kannattaa tehdä jo kotisivujen ja verkkokaupan
+					suunnitteluvaiheessa. Avainsanatutkimuksella selvitetään,
+					miten paljon hakuja tehdään tietyillä sanoilla yrityksesi
+					toimialalla ja tuotteisiin tai palveluihin liittyen. Kun
+					volyymiltaan suurimmat avainsanat on selvitetty, upotetaan
+					ne kotisivujesi tai verkkokauppasi sisältöteksteihin. Näin
+					mahdollistetaan kotisivujesi sekä sen alasivujen löytyminen
+					potentiaalisille asiakkaillesi.
+				</p>
+				<p>
+					Vaikka kotisivusi ja verkkokauppasi olisivat visuaalisesti
+					ja rakenteeltaan upeat ja lyömättömät, eivät asiakkaasi
+					välttämättä löydä sivuja, jollei niitä ole
+					hakukoneoptimoitu.
+				</p>
+				<p>
+					Onko sinulla jo valmiit kotisivut tai verkkokauppa, joiden
+					sisältöä olisi syytä tarkistaa? Kysy kattavaa analyysia
+					sivujesi nykyisestä tilanteesta. Tarkistetaan, ovatko sivusi
+					hakukoneoptimoidut ja miten sivujen tehokkuutta voisi
+					parantaa. Saat myös tekniset parannukset jo olemassa olevaan
+					sivustoon.
+				</p>
+				<Contact />
 			</div>
-		</section>
-
-		<section id="longDescription" class="py-8 mt-8">
-			<div class="max-w-prose mx-auto">
-				<h2 class="text-title text-4xl font-norm mb-8 mt-0 text-center">
-					Mitä hakukoneoptimointi tarkoittaa ja mikä on
-					avainsanatutkimus?
-				</h2>
-
-				<div class="text-primary">
-					<p>
-						Hakukoneoptimointi (SEO) on sivuston näkyvyyden
-						parantamista hakukonetuloksissa orgaanisen, eli
-						maksuttoman, liikenteen osalta. Hakukoneoptimointi on
-						kustannustehokasta, sillä hyvin optimoitu sivusto löytyy
-						hakukoneista oikeilla hakusanoilla riittävän korkealta
-						orgaanisesti ja se saa myös maksetussa
-						hakukonemainonnassa paremmat laatupisteet.
-					</p>
-					<p>
-						Hakukoneoptimointiin kiinteästi liittyvä
-						avainsanatutkimus kannattaa tehdä jo kotisivujen ja
-						verkkokaupan suunnitteluvaiheessa.
-						Avainsanatutkimuksella selvitetään, miten paljon hakuja
-						tehdään tietyillä sanoilla yrityksesi toimialalla ja
-						tuotteisiin tai palveluihin liittyen. Kun volyymiltaan
-						suurimmat avainsanat on selvitetty, upotetaan ne
-						kotisivujesi tai verkkokauppasi sisältöteksteihin. Näin
-						mahdollistetaan kotisivujesi sekä sen alasivujen
-						löytyminen potentiaalisille asiakkaillesi.
-					</p>
-					<p>
-						Vaikka kotisivusi ja verkkokauppasi olisivat
-						visuaalisesti ja rakenteeltaan upeat ja lyömättömät,
-						eivät asiakkaasi välttämättä löydä sivuja, jollei niitä
-						ole hakukoneoptimoitu.
-					</p>
-					<p>
-						Onko sinulla jo valmiit kotisivut tai verkkokauppa,
-						joiden sisältöä olisi syytä tarkistaa? Kysy kattavaa
-						analyysia sivujesi nykyisestä tilanteesta. Tarkistetaan,
-						ovatko sivusi hakukoneoptimoidut ja miten sivujen
-						tehokkuutta voisi parantaa. Saat myös tekniset
-						parannukset jo olemassa olevaan sivustoon.
-					</p>
-				</div>
-			</div>
-		</section>
+		</div>
 	</div>
 </template>
 
@@ -97,56 +71,14 @@
 	export default {
 		data() {
 			return {
-				title: "Hakukoneoptimointi (SEO)",
-				titleAlt: "Parannetaan yhdessä sivustosi näkyvyyttä hakukoneissa",
-				description:
-					"Hakukoneoptimointi (SEO) on sivuston näkyvyyden parantamista hakukonetuloksissa orgaanisen, eli maksuttoman, liikenteen osalta. Kisataan yhdessä ykköseksi!",
-				image: "websites-page",
-			};
-		},
-		head() {
-			return {
-				title: this.title + " | Tuspe Design",
-				meta: [
-					{
-						property: "og:title",
-						name: "twitter:title",
-						content: this.titleAlt,
-					},
-					{
-						hid: "seo",
-						name: "description",
-						content: this.description,
-					},
-					{
-						name: "twitter:description",
-						property: "og:description",
-						content: this.description,
-					},
-					{
-						name: "twitter:image",
-						property: "og:image",
-						type: "image/jpeg",
-						content: "https://tuspe.com/images/" + this.image + ".jpg",
-					},
-					{
-						property: "og:image:secure_url",
-						type: "image/jpeg",
-						content: "https://tuspe.com/images/" + this.image + ".jpg",
-					},
-					{
-						property: "og:image:width",
-						content: "720",
-					},
-					{
-						property: "og:image:height",
-						content: "900",
-					},
-					{
-						name: "twitter:image:alt",
-						content: this.titleAlt,
-					},
-				],
+				linkLeft: {
+					name: "Verkkosivujen luotettavat ylläpitopalvelut",
+					path: "yllapito",
+				},
+				linkRight: {
+					name: "Verkkotunnuksen rekisteröinti ja uusiminen yritykselle",
+					path: "verkkotunnukset",
+				},
 			};
 		},
 	};
