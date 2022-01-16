@@ -107,6 +107,7 @@
 							bg-link
 							text-button
 							font-bold
+							hover:text-white hover:bg-black
 						"
 						title="Kotisivut yritykselle ketterästi ja ammattitaidolla"
 					>
@@ -127,6 +128,7 @@
 							uppercase
 							no-underline
 							font-bold
+							hover:text-white hover:bg-black
 						"
 						:class="{
 							'text-content': !titleBig,

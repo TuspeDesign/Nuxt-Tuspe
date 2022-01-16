@@ -14,6 +14,7 @@
 				font-bold
 				bg-link
 				text-button
+				hover:text-white hover:bg-black
 			"
 			title="Ota rohkeasti yhteyttä"
 		>
