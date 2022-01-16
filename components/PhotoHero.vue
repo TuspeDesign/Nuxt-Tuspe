@@ -199,6 +199,7 @@
 		</div>
 
 		<a
+			v-if="!noLinkDown"
 			href="#info"
 			class="absolute right-4 bottom-14 md:bottom-6 w-12 h-12 grid z-30"
 			title="Lue lisää"
@@ -263,6 +264,10 @@
 			},
 			linkRight: {
 				type: Object,
+				default: null,
+			},
+			noLinkDown: {
+				type: String,
 				default: null,
 			},
 			contact: {

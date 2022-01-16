@@ -356,7 +356,7 @@
 					},
 					{
 						name: "Urheilusaitti",
-						path: "sportti",
+						path: "urheilu",
 					},
 					{
 						name: "Hakukoneoptimointi",
