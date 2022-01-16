@@ -15,14 +15,11 @@
 .dark {
 	--text: rgba(255 255 255 / 87%);
 	--text-title: #fff;
-	--text-link: #c38fff;
+	--text-link: #03dac6;
 	--text-link-menu: #fff;
 	--text-button: #000;
 	--bg-primary: #121212;
 	--bg-secondary: #282828;
-	--bg-menu: #1f1f1f;
-	--bg-box: #383838;
-	--shadow: rgba(0 0 0 / 20%)
 }
 
 .blue {
@@ -33,9 +30,6 @@
 	--text-button: #060608;
 	--bg-primary: #04293a;
 	--bg-secondary: #063a52;
-	--bg-menu: #064663;
-	--bg-box: #064663;
-	--shadow: rgba(0 0 0 / 30%)
 }
 
 .sepia {

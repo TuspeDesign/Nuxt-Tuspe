@@ -53,7 +53,6 @@ module.exports = {
 			colors: {
 				primary: 'var(--bg-primary)',
 				secondary: 'var(--bg-secondary)',
-				menu: 'var(--bg-menu)',
 				content: 'var(--text)',
 				title: 'var(--text-title)',
 				link: 'var(--text-link)',

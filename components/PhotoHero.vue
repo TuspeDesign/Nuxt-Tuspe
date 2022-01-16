@@ -123,7 +123,7 @@
 							align-middle
 							h-12
 							px-10
-							border-2 border-gray-400 border-solid
+							border border-white border-solid
 							rounded-full
 							uppercase
 							no-underline

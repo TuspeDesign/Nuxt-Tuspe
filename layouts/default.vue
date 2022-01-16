@@ -5,7 +5,7 @@
 
 		<nav
 			:class="{ hidden: !active }"
-			class="fixed top-0 left-0 z-40 grid bg-secondary text-center"
+			class="fixed top-0 left-0 z-40 grid bg-primary text-center"
 		>
 			<ul
 				id="menu"
@@ -48,8 +48,8 @@
 				h-14
 				bottom-0
 				right-0
-				bg-menu
 				text-center
+				bg-secondary
 				md:top-0 md:h-screen md:w-14
 			"
 		>
