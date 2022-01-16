@@ -200,7 +200,7 @@
 
 		<a
 			href="#info"
-			class="absolute right-4 bottom-8 w-12 h-12 grid z-30"
+			class="absolute right-4 bottom-10 md:bottom-6 w-12 h-12 grid z-30"
 			title="Lue lisää"
 			rel="nofollow"
 		>
