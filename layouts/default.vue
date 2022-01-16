@@ -14,6 +14,7 @@
 				aria-label="Navigointi"
 			>
 				<li
+					@click="openMenu"
 					v-for="(item, i) in menu"
 					:key="i"
 					class="block"
