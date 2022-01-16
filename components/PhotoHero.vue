@@ -198,26 +198,41 @@
 			</nuxt-link>
 		</div>
 
-		<a
-			v-if="!noLinkDown"
-			href="#info"
-			class="absolute right-4 bottom-14 md:bottom-6 w-12 h-12 grid z-30"
-			title="Lue lisää"
-			rel="nofollow"
+		<div
+			class="
+				text-center
+				w-full
+				block
+				h-12
+				md:w-12
+				absolute
+				right-4
+				bottom-14
+				md:bottom-6
+				z-30
+			"
 		>
-			<svg
-				class="self-center mx-auto"
-				xmlns="http://www.w3.org/2000/svg"
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
+			<a
+				v-if="!noLinkDown"
+				href="#info"
+				class="w-12 h-12 grid mx-auto"
+				title="Lue lisää"
+				rel="nofollow"
 			>
-				<title>Nuoli alaspäin</title>
-				<path
-					d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
-				/>
-			</svg>
-		</a>
+				<svg
+					class="self-center mx-auto"
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+				>
+					<title>Nuoli alaspäin</title>
+					<path
+						d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+					/>
+				</svg>
+			</a>
+		</div>
 	</div>
 </template>
 
