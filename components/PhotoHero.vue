@@ -34,7 +34,7 @@
 				box-border
 			"
 		>
-			<div class="self-center text-center md:text-left">
+			<div class="self-center text-center -mt-14 md:text-left">
 				<header class="uppercase mb-4">
 					<div
 						v-if="titleSmall"
@@ -200,7 +200,7 @@
 
 		<a
 			href="#info"
-			class="absolute bottom-4 right-4 w-12 h-12 grid z-30"
+			class="absolute right-4 bottom-8 w-12 h-12 grid z-30"
 			title="Lue lisää"
 			rel="nofollow"
 		>
@@ -234,11 +234,11 @@
 			},
 			width: {
 				type: String,
-				default: 1920,
+				default: "1920",
 			},
 			height: {
 				type: String,
-				default: 1080,
+				default: "1080",
 			},
 			alt: {
 				type: String,
