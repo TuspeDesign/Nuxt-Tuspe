@@ -142,7 +142,9 @@
 					left-0
 					w-full
 					text-center
+					bg-secondary
 					md:relative md:top-0 md:w-12 md:mt-2 md:mx-auto
+					z-30
 				"
 			>
 				<ul class="m-0 p-0">
