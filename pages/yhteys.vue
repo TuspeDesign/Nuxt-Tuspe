@@ -72,8 +72,8 @@
 					path: "hakukoneoptimointi",
 				},
 				linkRight: {
-					name: "Verkkotunnuksen rekisteröinti ja uusiminen yritykselle",
-					path: "verkkotunnukset",
+					name: "Luomme kotisivuja ja verkkokauppoja, jotka helpottavat yrityksesi toimintaa",
+					path: "",
 				},
 			};
 		},
