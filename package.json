@@ -9,12 +9,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^3.21.0",
+    "core-js": "^3.22.8",
     "nuxt": "^2.15.8",
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
-    "@nuxtjs/tailwindcss": "^4.2.1"
+    "@nuxtjs/tailwindcss": "^5.1.2"
   }
 }

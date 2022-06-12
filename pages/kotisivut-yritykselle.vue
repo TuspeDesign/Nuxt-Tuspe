@@ -104,7 +104,7 @@
 						Miten ja mistä hankkia
 						<nuxt-link
 							class="text-link"
-							to="/verkkotunnus"
+							to="/verkkotunnukset"
 							title="Verkkotunnus eli domain on sivujesi nimi ja osoite"
 							>verkkotunnus</nuxt-link
 						>
